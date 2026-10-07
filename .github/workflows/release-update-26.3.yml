@@ -1,0 +1,75 @@
+name: Release update-26.3
+
+on:
+  push:
+    branches:
+      - update-26.3
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-update-26.3
+  cancel-in-progress: false
+
+jobs:
+  validate-build-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout update branch
+        uses: actions/checkout@v4
+        with:
+          ref: update-26.3
+          fetch-depth: 0
+
+      - name: Validate and build Java resource pack
+        run: python3 scripts/validate-and-build-java-pack.py
+
+      - name: Show hashes
+        run: |
+          cat dist/EnderNation-Resource-Pack.zip.sha1
+          cat dist/EnderNation-Resource-Pack.zip.sha256
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: EnderNation-Resource-Pack-update-26.3
+          path: |
+            dist/EnderNation-Resource-Pack.zip
+            dist/EnderNation-Resource-Pack.zip.sha1
+            dist/EnderNation-Resource-Pack.zip.sha256
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Move fixed release tag to this branch commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -f update-26.3 "${GITHUB_SHA}"
+          git push --force origin refs/tags/update-26.3
+
+      - name: Create or update fixed branch release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          NOTES="Automatically built from branch update-26.3 at commit ${GITHUB_SHA}. Java pack only: pack.mcmeta, pack.png and assets/."
+          if gh release view update-26.3 >/dev/null 2>&1; then
+            gh release edit update-26.3 \
+              --title "EnderNation Resource Pack – update-26.3" \
+              --notes "${NOTES}"
+          else
+            gh release create update-26.3 \
+              --title "EnderNation Resource Pack – update-26.3" \
+              --notes "${NOTES}" \
+              --latest=false
+          fi
+
+          gh release upload update-26.3 \
+            dist/EnderNation-Resource-Pack.zip \
+            dist/EnderNation-Resource-Pack.zip.sha1 \
+            dist/EnderNation-Resource-Pack.zip.sha256 \
+            --clobber
