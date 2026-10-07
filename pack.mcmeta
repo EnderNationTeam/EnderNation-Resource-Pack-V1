@@ -1,7 +1,10 @@
 {
   "pack": {
-    "min_format": 88,
-    "max_format": 88,
-    "description": "§3Ender§bNation§aPack §e1.21.11"
+    "min_format": 75,
+    "max_format": [
+      97,
+      1
+    ],
+    "description": "§3Ender§bNation§aPack §e1.21.11–26.3"
   }
 }
