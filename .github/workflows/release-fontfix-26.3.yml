@@ -1,0 +1,75 @@
+name: Release 26.3 fontfix uniform v1
+
+on:
+  push:
+    branches:
+      - update-26.3
+    paths:
+      - .github/workflows/release-fontfix-26.3.yml
+
+permissions:
+  contents: write
+
+jobs:
+  validate-build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout update branch
+        uses: actions/checkout@v4
+        with:
+          ref: update-26.3
+          fetch-depth: 0
+
+      - name: Validate and build Java resource pack
+        run: python3 scripts/validate-and-build-java-pack.py
+
+      - name: Verify font migration and preserve custom glyphs
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("assets/minecraft/font/default.json").read_text(encoding="utf-8"))
+          providers = data["providers"]
+          assert not any(p.get("type") == "ttf" for p in providers), "TTF provider still present"
+          refs = [p for p in providers if p.get("type") == "reference"]
+          assert refs == [{"type": "reference", "id": "minecraft:uniform"}], refs
+          bitmaps = [p for p in providers if p.get("type") == "bitmap"]
+          assert len(bitmaps) == 58, len(bitmaps)
+          assert any("\ue041" in "".join(p.get("chars", [])) for p in bitmaps), "Flash/UI glyph U+E041 missing"
+          print("Font migration checks OK; 58 custom bitmap providers preserved.")
+          PY
+
+      - name: Create cache-safe release asset and hashes
+        run: |
+          cp dist/EnderNation-Resource-Pack.zip dist/EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip
+          cd dist
+          sha1sum EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip > EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip.sha1
+          sha256sum EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip > EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip.sha256
+          unzip -t EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip
+          unzip -l EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip | grep -E ' pack.mcmeta$'
+          cat EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip.sha1
+          cat EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip.sha256
+
+      - name: Create unique GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="update-26.3-fontfix-uniform-v1"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -f "$TAG" "${GITHUB_SHA}"
+          git push --force origin "refs/tags/$TAG"
+
+          NOTES="Minecraft Java 26.3 font compatibility variant. Replaces the Poppins TTF provider for ordinary text with a reference to minecraft:uniform while preserving all existing custom bitmap/private-use glyph providers and all pack assets. Built from update-26.3 at ${GITHUB_SHA}."
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release edit "$TAG" --title "EnderNation Resource Pack 26.3 – Fontfix Uniform v1" --notes "$NOTES"
+          else
+            gh release create "$TAG" --title "EnderNation Resource Pack 26.3 – Fontfix Uniform v1" --notes "$NOTES" --latest=false
+          fi
+
+          gh release upload "$TAG" \
+            dist/EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip \
+            dist/EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip.sha1 \
+            dist/EnderNation-Resource-Pack-26.3-fontfix-uniform-v1.zip.sha256 \
+            --clobber
