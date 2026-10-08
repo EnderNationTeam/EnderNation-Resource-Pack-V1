@@ -1,17 +1,6 @@
 {
   "providers": [
     {
-      "type": "ttf",
-      "file": "minecraft:font.ttf",
-      "shift": [
-        0,
-        0
-      ],
-      "size": 8.5,
-      "oversample": 20,
-      "skip": ""
-    },
-    {
       "type": "bitmap",
       "file": "font/tags/general/ranks/ranks.png",
       "ascent": 7,
@@ -547,6 +536,21 @@
       "chars": [
         ""
       ]
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:include/space"
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:include/default",
+      "filter": {
+        "uniform": false
+      }
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:include/unifont"
     }
   ]
 }

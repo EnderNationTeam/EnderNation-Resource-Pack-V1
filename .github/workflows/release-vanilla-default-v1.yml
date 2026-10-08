@@ -1,0 +1,112 @@
+name: Release 26.3 vanilla default font v1
+
+on:
+  push:
+    branches:
+      - update-26.3
+    paths:
+      - .github/workflows/release-vanilla-default-v1.yml
+
+permissions:
+  contents: write
+
+jobs:
+  validate-build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout update branch
+        uses: actions/checkout@v4
+        with:
+          ref: update-26.3
+          fetch-depth: 0
+
+      - name: Verify vanilla default font chain and aliases
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          default=json.loads(Path("assets/minecraft/font/default.json").read_text(encoding="utf-8"))
+          providers=default["providers"]
+          bitmaps=[p for p in providers if p.get("type")=="bitmap"]
+          refs=[p for p in providers if p.get("type")=="reference"]
+          assert len(bitmaps)==58, len(bitmaps)
+          assert any("\ue041" in "".join(p.get("chars",[])) for p in bitmaps), "U+E041 missing"
+          expected=[
+              {"type":"reference","id":"minecraft:include/space"},
+              {"type":"reference","id":"minecraft:include/default","filter":{"uniform":False}},
+              {"type":"reference","id":"minecraft:include/unifont"},
+          ]
+          assert refs==expected,(refs,expected)
+          assert providers[-3:]==expected,"Vanilla fallback chain must be last"
+          for name in ("regular","bold"):
+              data=json.loads(Path(f"assets/endernation/font/{name}.json").read_text(encoding="utf-8"))
+              assert data=={"providers":[{"type":"reference","id":"minecraft:default"}]},(name,data)
+          ttfs=list(Path("assets").rglob("*.ttf"))
+          assert not ttfs,ttfs
+          print("Vanilla default chain OK; 58 custom bitmap providers preserved; aliases non-cyclic; no custom TTFs.")
+          PY
+
+      - name: Validate and build complete Java pack
+        run: python3 scripts/validate-and-build-java-pack.py
+
+      - name: Verify pack structure and 26.3 metadata
+        run: |
+          python3 - <<'PY'
+          import json, zipfile
+          z=zipfile.ZipFile("dist/EnderNation-Resource-Pack.zip")
+          names=set(z.namelist())
+          required={
+            "pack.mcmeta",
+            "assets/minecraft/font/default.json",
+            "assets/endernation/font/regular.json",
+            "assets/endernation/font/bold.json",
+            "assets/minecraft/textures/font/enderguns/flashbang.png"
+          }
+          missing=sorted(required-names)
+          assert not missing,missing
+          assert not any(n.endswith(".ttf") for n in names), "TTF unexpectedly present in release ZIP"
+          mcmeta=json.loads(z.read("pack.mcmeta"))
+          assert mcmeta["pack"]["max_format"]==[97,1],mcmeta
+          print("Complete vanilla-font pack structure and 26.3 metadata OK")
+          PY
+          unzip -t dist/EnderNation-Resource-Pack.zip
+
+      - name: Create cache-safe release assets
+        run: |
+          cp dist/EnderNation-Resource-Pack.zip dist/EnderNation-Resource-Pack-26.3-vanilla-font-v1.zip
+          cd dist
+          sha1sum EnderNation-Resource-Pack-26.3-vanilla-font-v1.zip > EnderNation-Resource-Pack-26.3-vanilla-font-v1.zip.sha1
+          sha256sum EnderNation-Resource-Pack-26.3-vanilla-font-v1.zip > EnderNation-Resource-Pack-26.3-vanilla-font-v1.zip.sha256
+          cat EnderNation-Resource-Pack-26.3-vanilla-font-v1.zip.sha1
+          cat EnderNation-Resource-Pack-26.3-vanilla-font-v1.zip.sha256
+
+      - name: Mark previous font experiments superseded
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for tag in update-26.3-fontfix-uniform-v1 update-26.3-fontfix-smooth-lato-v1 update-26.3-truebold-v1; do
+            if gh release view "$tag" >/dev/null 2>&1; then
+              gh release edit "$tag" --prerelease --notes "SUPERSEDED: user selected the normal Minecraft 26.3 default font and normal Minecraft bold. Do not deploy this experimental font build."
+            fi
+          done
+
+      - name: Publish vanilla default font release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="update-26.3-vanilla-font-v1"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -f "$TAG" "${GITHUB_SHA}"
+          git push --force origin "refs/tags/$TAG"
+          NOTES="Minecraft Java 26.3 vanilla-default-font build. minecraft:default uses the vanilla 26.3 provider chain (include/space, include/default with uniform=false, include/unifont) after the existing 58 EnderNation bitmap/private-use providers. endernation:regular and endernation:bold are compatibility aliases to minecraft:default; alias names do not imply bold. Use normal Minecraft bold (<bold>/&l) again. No custom TTF files are included."
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release edit "$TAG" --title "EnderNation Resource Pack 26.3 – Vanilla Font v1" --notes "$NOTES"
+          else
+            gh release create "$TAG" --title "EnderNation Resource Pack 26.3 – Vanilla Font v1" --notes "$NOTES" --latest=false
+          fi
+          gh release upload "$TAG" \
+            dist/EnderNation-Resource-Pack-26.3-vanilla-font-v1.zip \
+            dist/EnderNation-Resource-Pack-26.3-vanilla-font-v1.zip.sha1 \
+            dist/EnderNation-Resource-Pack-26.3-vanilla-font-v1.zip.sha256 \
+            --clobber
