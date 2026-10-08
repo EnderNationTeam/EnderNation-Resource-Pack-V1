@@ -1,3 +1,4 @@
+# Triggered one-off release workflow
 name: Release 26.3 fontfix uniform v1
 
 on:
