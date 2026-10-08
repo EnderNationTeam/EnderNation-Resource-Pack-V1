@@ -75,7 +75,7 @@ jobs:
             echo "No font changes to commit"
           else
             git commit -m "Use Lato Regular for clean smooth bold text in 26.3 [skip ci]"
-            git push origin HEAD:update-26.3
+            git push origin HEAD:refs/heads/update-26.3
           fi
           echo "FINAL_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
 
