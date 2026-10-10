@@ -1,162 +1,258 @@
 {
   "flashbanggg": {
     "sounds": [
-      "minecraft:flashbanggg"
+      {
+        "name": "minecraft:flashbanggg",
+        "volume": 0.5
+      }
     ]
   },
   "hitmarker": {
     "sounds": [
-      "minecraft:hitmarker"
+      {
+        "name": "minecraft:hitmarker",
+        "volume": 0.5
+      }
     ]
   },
   "kill": {
     "sounds": [
-      "minecraft:kill"
+      {
+        "name": "minecraft:kill",
+        "volume": 0.5
+      }
     ]
   },
   "demonic": {
     "sounds": [
-      "minecraft:demonic"
+      {
+        "name": "minecraft:demonic",
+        "volume": 0.5
+      }
     ]
   },
   "never": {
     "sounds": [
-      "minecraft:never"
+      {
+        "name": "minecraft:never",
+        "volume": 0.5
+      }
     ]
   },
   "scare2": {
     "sounds": [
-      "minecraft:scare2"
+      {
+        "name": "minecraft:scare2",
+        "volume": 0.5
+      }
     ]
   },
   "ssstik": {
     "sounds": [
-      "minecraft:ssstik"
+      {
+        "name": "minecraft:ssstik",
+        "volume": 0.5
+      }
     ]
   },
   "aa12": {
     "sounds": [
-      "minecraft:aa12"
+      {
+        "name": "minecraft:aa12",
+        "volume": 0.5
+      }
     ]
   },
   "spas12": {
     "sounds": [
-      "minecraft:spas12"
+      {
+        "name": "minecraft:spas12",
+        "volume": 0.5
+      }
     ]
   },
   "striker": {
     "sounds": [
-      "minecraft:striker"
+      {
+        "name": "minecraft:striker",
+        "volume": 0.5
+      }
     ]
   },
   "remington870": {
     "sounds": [
-      "minecraft:remington870"
+      {
+        "name": "minecraft:remington870",
+        "volume": 0.5
+      }
     ]
   },
   "m1014": {
     "sounds": [
-      "minecraft:m1014"
+      {
+        "name": "minecraft:m1014",
+        "volume": 0.5
+      }
     ]
   },
   "m98b": {
     "sounds": [
-      "minecraft:m98b"
+      {
+        "name": "minecraft:m98b",
+        "volume": 0.5
+      }
     ]
   },
   "m39": {
     "sounds": [
-      "minecraft:m39"
+      {
+        "name": "minecraft:m39",
+        "volume": 0.5
+      }
     ]
   },
   "msr": {
     "sounds": [
-      "minecraft:msr"
+      {
+        "name": "minecraft:msr",
+        "volume": 0.5
+      }
     ]
   },
   "sv98": {
     "sounds": [
-      "minecraft:sv98"
+      {
+        "name": "minecraft:sv98",
+        "volume": 0.5
+      }
     ]
   },
   "cz550": {
     "sounds": [
-      "minecraft:cz550"
+      {
+        "name": "minecraft:cz550",
+        "volume": 0.5
+      }
     ]
   },
   "mp7": {
     "sounds": [
-      "minecraft:mp7"
+      {
+        "name": "minecraft:mp7",
+        "volume": 0.5
+      }
     ]
   },
   "p90": {
     "sounds": [
-      "minecraft:p90"
+      {
+        "name": "minecraft:p90",
+        "volume": 0.5
+      }
     ]
   },
   "fal": {
     "sounds": [
-      "minecraft:fal"
+      {
+        "name": "minecraft:fal",
+        "volume": 0.5
+      }
     ]
   },
   "ak47": {
     "sounds": [
-      "minecraft:ak47"
+      {
+        "name": "minecraft:ak47",
+        "volume": 0.5
+      }
     ]
   },
   "m16": {
     "sounds": [
-      "minecraft:m16"
+      {
+        "name": "minecraft:m16",
+        "volume": 0.5
+      }
     ]
   },
   "m9": {
     "sounds": [
-      "minecraft:m9"
+      {
+        "name": "minecraft:m9",
+        "volume": 0.5
+      }
     ]
   },
   "g17": {
     "sounds": [
-      "minecraft:g17"
+      {
+        "name": "minecraft:g17",
+        "volume": 0.5
+      }
     ]
   },
   "fiveseven": {
     "sounds": [
-      "minecraft:fiveseven"
+      {
+        "name": "minecraft:fiveseven",
+        "volume": 0.5
+      }
     ]
   },
   "m1911": {
     "sounds": [
-      "minecraft:m1911"
+      {
+        "name": "minecraft:m1911",
+        "volume": 0.5
+      }
     ]
   },
   "deserteagle": {
     "sounds": [
-      "minecraft:deserteagle"
+      {
+        "name": "minecraft:deserteagle",
+        "volume": 0.5
+      }
     ]
   },
   "waitmusic": {
     "sounds": [
-      "minecraft:waitmusic"
+      {
+        "name": "minecraft:waitmusic",
+        "volume": 0.5
+      }
     ]
   },
   "notification": {
     "sounds": [
-      "minecraft:notification"
+      {
+        "name": "minecraft:notification",
+        "volume": 0.5
+      }
     ]
   },
   "report_notification": {
     "sounds": [
-      "minecraft:report_notification"
+      {
+        "name": "minecraft:report_notification",
+        "volume": 0.5
+      }
     ]
   },
   "warn_notification": {
     "sounds": [
-      "minecraft:warn_notification"
+      {
+        "name": "minecraft:warn_notification",
+        "volume": 0.5
+      }
     ]
   },
   "error_notification": {
     "sounds": [
-      "minecraft:error_notification"
+      {
+        "name": "minecraft:error_notification",
+        "volume": 0.5
+      }
     ]
   }
 }
