@@ -5,14 +5,44 @@
       "identifier": "geyser_custom:eg_mp7",
       "materials": {
         "default": "entity_alphatest_one_sided",
-        "enchanted": "entity_alphatest_one_sided"
+        "enchanted": "entity_alphatest_glint"
       },
       "textures": {
-        "default": "textures/enderguns/mp7",
+        "default": "textures/endernation/generated/mp7",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {
-        "default": "geometry.endernation.flat_item"
+        "default": "geometry.endernation.mp7"
+      },
+      "animations": {
+        "firstperson_righthand": "animation.endernation.mp7.firstperson_righthand",
+        "firstperson_lefthand": "animation.endernation.mp7.firstperson_lefthand",
+        "thirdperson_righthand": "animation.endernation.mp7.thirdperson_righthand",
+        "thirdperson_lefthand": "animation.endernation.mp7.thirdperson_lefthand",
+        "head": "animation.endernation.mp7.head",
+        "hide_head": "animation.endernation.mp7.hide_head"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "firstperson_righthand": "c.is_first_person && c.item_slot == 'main_hand'"
+          },
+          {
+            "firstperson_lefthand": "c.is_first_person && c.item_slot == 'off_hand'"
+          },
+          {
+            "thirdperson_righthand": "!c.is_first_person && c.item_slot == 'main_hand'"
+          },
+          {
+            "thirdperson_lefthand": "!c.is_first_person && c.item_slot == 'off_hand'"
+          },
+          {
+            "head": "!c.is_first_person && c.item_slot == 'head'"
+          },
+          {
+            "hide_head": "c.is_first_person && c.item_slot == 'head'"
+          }
+        ]
       },
       "render_controllers": [
         "controller.render.item_default"

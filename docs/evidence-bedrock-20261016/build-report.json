@@ -1,0 +1,3284 @@
+{
+  "items": [
+    {
+      "name": "aa_12",
+      "base": "minecraft:diamond_pickaxe",
+      "cmd": 1.0,
+      "item_model": "enderguns:aa_12",
+      "source_model": "enderguns:weapon/aa_12",
+      "source_sha256": "019cd6e9b593ca6b0375bcda7a1e9a5f3d69f682d84e622e07e04d9fefdd8a37",
+      "java_elements": 75,
+      "bedrock_cubes": 75,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            -5.75
+          ],
+          "scale": [
+            0.96,
+            0.97,
+            0.96
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            -5.75
+          ],
+          "scale": [
+            0.96,
+            0.97,
+            0.96
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            -63
+          ],
+          "translation": [
+            0,
+            6,
+            -1.25
+          ],
+          "scale": [
+            0.87,
+            0.88,
+            0.87
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.25
+          ],
+          "scale": [
+            0.87,
+            0.88,
+            0.87
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -93,
+            7
+          ],
+          "translation": [
+            0,
+            10.25,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_aa_12",
+        "endernation:aa_12"
+      ]
+    },
+    {
+      "name": "ak_47",
+      "base": "minecraft:iron_hoe",
+      "cmd": 1.0,
+      "item_model": "enderguns:ak_47",
+      "source_model": "enderguns:weapon/ak_47",
+      "source_sha256": "23fbb16582e28945c87086510df4a6af0d1362ed73937c069a0074052e8bb04c",
+      "java_elements": 74,
+      "bedrock_cubes": 74,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2.25,
+            -7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2.25,
+            -7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            116.65,
+            -90,
+            63
+          ],
+          "translation": [
+            0,
+            5.25,
+            -2
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -116.65,
+            90,
+            116.77
+          ],
+          "translation": [
+            0,
+            0.5,
+            -5.25
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            12.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_ak_47",
+        "endernation:ak_47"
+      ]
+    },
+    {
+      "name": "cz_550",
+      "base": "minecraft:wooden_axe",
+      "cmd": 1.0,
+      "item_model": "enderguns:cz_550",
+      "source_model": "enderguns:weapon/cz_550",
+      "source_sha256": "8b393bde62494daae77300eff8058756a27016cf4594916fd384d1e83471ce27",
+      "java_elements": 80,
+      "bedrock_cubes": 80,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -7.5
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -7.5
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_cz_550",
+        "endernation:cz_550"
+      ]
+    },
+    {
+      "name": "desert_eagle",
+      "base": "minecraft:diamond_shovel",
+      "cmd": 1.0,
+      "item_model": "enderguns:desert_eagle",
+      "source_model": "enderguns:weapon/desert_eagle",
+      "source_sha256": "fd84b7a10ba46dc37d9040c7dd4aef3f7239121b7df1fc987011ff5527aa0083",
+      "java_elements": 45,
+      "bedrock_cubes": 45,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            1,
+            -1
+          ],
+          "scale": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            1,
+            -1
+          ],
+          "scale": [
+            1.34,
+            1.34,
+            1.34
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            -0.5,
+            0
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.91
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            -1.25,
+            0
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.91
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -93,
+            7
+          ],
+          "translation": [
+            0,
+            10.25,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_desert_eagle",
+        "endernation:desert_eagle"
+      ]
+    },
+    {
+      "name": "fal",
+      "base": "minecraft:golden_hoe",
+      "cmd": 1.0,
+      "item_model": "enderguns:fal",
+      "source_model": "enderguns:weapon/fal",
+      "source_sha256": "65fa6dba681b496214e93c7c3eb950de7409ae1e9c234dc0c5c40873f59b3bce",
+      "java_elements": 47,
+      "bedrock_cubes": 47,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2.25,
+            -7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2.25,
+            -7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            -60
+          ],
+          "translation": [
+            0,
+            5.5,
+            -1
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.5,
+            -5
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            12.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_fal",
+        "endernation:fal"
+      ]
+    },
+    {
+      "name": "five_seven",
+      "base": "minecraft:golden_shovel",
+      "cmd": 1.0,
+      "item_model": "enderguns:five_seven",
+      "source_model": "enderguns:weapon/five_seven",
+      "source_sha256": "def292f7fbd7b57e95cc9e45b3fd17c89d039550f318ab91a69251be7361aaaf",
+      "java_elements": 59,
+      "bedrock_cubes": 59,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -1.75
+          ],
+          "scale": [
+            0.78,
+            0.78,
+            0.69
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -1.75
+          ],
+          "scale": [
+            0.78,
+            0.78,
+            0.69
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0.25,
+            -0.25,
+            -1
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.73
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            -0.5,
+            -0.75
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.73
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            10.75,
+            -5
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_five_seven",
+        "endernation:five_seven"
+      ]
+    },
+    {
+      "name": "g17",
+      "base": "minecraft:stone_shovel",
+      "cmd": 1.0,
+      "item_model": "enderguns:g17",
+      "source_model": "enderguns:weapon/g17",
+      "source_sha256": "acc824f528fd18c752af281adf474fd6cea4090dc3865813767b08bc02ea9d9c",
+      "java_elements": 31,
+      "bedrock_cubes": 31,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            1.25,
+            -0.5
+          ],
+          "scale": [
+            0.91,
+            0.91,
+            0.91
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            1.25,
+            -0.5
+          ],
+          "scale": [
+            0.91,
+            0.91,
+            0.91
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            -3
+          ],
+          "translation": [
+            0,
+            -1.5,
+            0
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            -2,
+            0
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -93,
+            7
+          ],
+          "translation": [
+            0,
+            10.25,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_g17",
+        "endernation:g17"
+      ]
+    },
+    {
+      "name": "m1014",
+      "base": "minecraft:wooden_pickaxe",
+      "cmd": 1.0,
+      "item_model": "enderguns:m1014",
+      "source_model": "enderguns:weapon/m1014",
+      "source_sha256": "c0e66ffb9103e51e9263e5cf6853e4581c023e2aa653aa759d56f57f879f4ba4",
+      "java_elements": 46,
+      "bedrock_cubes": 46,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            -5.75
+          ],
+          "scale": [
+            0.95,
+            1.01,
+            1
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            -5.75
+          ],
+          "scale": [
+            0.95,
+            1.01,
+            1
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            -63
+          ],
+          "translation": [
+            0,
+            5.5,
+            -0.5
+          ],
+          "scale": [
+            0.85,
+            0.91,
+            0.9
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.25
+          ],
+          "scale": [
+            0.85,
+            0.91,
+            0.9
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -93,
+            7
+          ],
+          "translation": [
+            0,
+            10.25,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_m1014",
+        "endernation:m1014"
+      ]
+    },
+    {
+      "name": "m16",
+      "base": "minecraft:diamond_hoe",
+      "cmd": 1.0,
+      "item_model": "enderguns:m16",
+      "source_model": "enderguns:weapon/m16",
+      "source_sha256": "0aaf6046485b1bb7de98d8c949dbcfb5240777f507e9c996c3677209fdcb666b",
+      "java_elements": 103,
+      "bedrock_cubes": 103,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2.25,
+            -7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2.25,
+            -7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            116.65,
+            -90,
+            63
+          ],
+          "translation": [
+            0,
+            5.25,
+            -2
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -116.65,
+            90,
+            116.77
+          ],
+          "translation": [
+            0,
+            0.5,
+            -5.25
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            12.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_m16",
+        "endernation:m16"
+      ]
+    },
+    {
+      "name": "m1911",
+      "base": "minecraft:iron_shovel",
+      "cmd": 1.0,
+      "item_model": "enderguns:m1911",
+      "source_model": "enderguns:weapon/m1911",
+      "source_sha256": "1a50ef06258f043dd80e7f244067b33fd7f5f473eda4e2215d44a111d96676cb",
+      "java_elements": 51,
+      "bedrock_cubes": 51,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -1.75
+          ],
+          "scale": [
+            0.78,
+            0.78,
+            0.69
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -1.75
+          ],
+          "scale": [
+            0.78,
+            0.78,
+            0.69
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            -0.5,
+            -1
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.71
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            -0.5,
+            -1
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.71
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -93,
+            7
+          ],
+          "translation": [
+            0,
+            10.25,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_m1911",
+        "endernation:m1911"
+      ]
+    },
+    {
+      "name": "m39",
+      "base": "minecraft:iron_axe",
+      "cmd": 1.0,
+      "item_model": "enderguns:m39",
+      "source_model": "enderguns:weapon/m39",
+      "source_sha256": "0181ab442020f18ff92ed3363ba15985e481b5c3092bbe22497016d4e4acd2bd",
+      "java_elements": 80,
+      "bedrock_cubes": 80,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -7.5
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -7.5
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_m39",
+        "endernation:m39"
+      ]
+    },
+    {
+      "name": "m9",
+      "base": "minecraft:wooden_shovel",
+      "cmd": 1.0,
+      "item_model": "enderguns:m9",
+      "source_model": "enderguns:weapon/m9",
+      "source_sha256": "2f8577d1fd637ac65008de8a61898b6a20014632151700659c9bf9afdd0fe4f2",
+      "java_elements": 58,
+      "bedrock_cubes": 58,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            9,
+            -89,
+            5
+          ],
+          "translation": [
+            1,
+            1.25,
+            -7.75
+          ],
+          "scale": [
+            0.78,
+            0.78,
+            0.69
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -128.46,
+            77.65,
+            149.97
+          ],
+          "translation": [
+            1.25,
+            4,
+            -9.25
+          ],
+          "scale": [
+            0.78,
+            0.78,
+            0.69
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            -0.75,
+            -5.5
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.73
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            -0.75,
+            -5.5
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.73
+          ]
+        },
+        "head": {
+          "rotation": [
+            -24,
+            60,
+            -47
+          ],
+          "translation": [
+            4.5,
+            -11.25,
+            -7.5
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_m9",
+        "endernation:m9"
+      ]
+    },
+    {
+      "name": "m98b",
+      "base": "minecraft:diamond_axe",
+      "cmd": 1.0,
+      "item_model": "enderguns:m98b",
+      "source_model": "enderguns:weapon/m98b",
+      "source_sha256": "e2ace079d085060a8551c6dd325a9382ce3215cd1e9dcec2e9a689d9e7ba045a",
+      "java_elements": 80,
+      "bedrock_cubes": 80,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -7.5
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -7.5
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_m98b",
+        "endernation:m98b"
+      ]
+    },
+    {
+      "name": "mp7",
+      "base": "minecraft:wooden_hoe",
+      "cmd": 1.0,
+      "item_model": "enderguns:mp7",
+      "source_model": "enderguns:weapon/mp7",
+      "source_sha256": "f71c57de0ef8467f73800b4283a0d339da3accd725071d5c65ec46808db2756a",
+      "java_elements": 40,
+      "bedrock_cubes": 40,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            1.75,
+            -2.25
+          ],
+          "scale": [
+            0.94,
+            0.94,
+            0.94
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            1.75,
+            -2.25
+          ],
+          "scale": [
+            0.94,
+            0.94,
+            0.94
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            -56
+          ],
+          "translation": [
+            0.25,
+            0.25,
+            0
+          ],
+          "scale": [
+            0.92,
+            0.92,
+            0.92
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            -0.5,
+            0
+          ],
+          "scale": [
+            0.92,
+            0.92,
+            0.92
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            12.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_mp7",
+        "endernation:mp7"
+      ]
+    },
+    {
+      "name": "msr",
+      "base": "minecraft:golden_axe",
+      "cmd": 1.0,
+      "item_model": "enderguns:msr",
+      "source_model": "enderguns:weapon/msr",
+      "source_sha256": "17ed200732c9998035a7add60daea25a1af5ed3556de2722bea868590c6b0367",
+      "java_elements": 80,
+      "bedrock_cubes": 80,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -7.5
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -7.5
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_msr",
+        "endernation:msr"
+      ]
+    },
+    {
+      "name": "p90",
+      "base": "minecraft:stone_hoe",
+      "cmd": 1.0,
+      "item_model": "enderguns:p90",
+      "source_model": "enderguns:weapon/p90",
+      "source_sha256": "aece822d8cfc13018bd868f1021d3d260c9cbbd09271c4cb3f1275725dbc8f94",
+      "java_elements": 69,
+      "bedrock_cubes": 69,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            1.5,
+            -1
+          ],
+          "scale": [
+            0.82,
+            0.82,
+            0.82
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            1.5,
+            -1
+          ],
+          "scale": [
+            0.82,
+            0.82,
+            0.82
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            -60
+          ],
+          "translation": [
+            -1.25,
+            0,
+            2.5
+          ],
+          "scale": [
+            0.67,
+            0.67,
+            0.67
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            1.75
+          ],
+          "scale": [
+            0.67,
+            0.67,
+            0.67
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            12.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_p90",
+        "endernation:p90"
+      ]
+    },
+    {
+      "name": "remington_870",
+      "base": "minecraft:stone_pickaxe",
+      "cmd": 1.0,
+      "item_model": "enderguns:remington_870",
+      "source_model": "enderguns:weapon/remington_870",
+      "source_sha256": "25cd9e023609b516e6e98a33c30d07872159d141dfd1eadb799382180b9126ab",
+      "java_elements": 50,
+      "bedrock_cubes": 50,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            -5.75
+          ],
+          "scale": [
+            0.96,
+            0.96,
+            0.96
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            -5.75
+          ],
+          "scale": [
+            0.96,
+            0.96,
+            0.96
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            -63
+          ],
+          "translation": [
+            0,
+            5.75,
+            -1.25
+          ],
+          "scale": [
+            0.87,
+            0.87,
+            0.87
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.5,
+            -5.25
+          ],
+          "scale": [
+            0.87,
+            0.87,
+            0.87
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -93,
+            7
+          ],
+          "translation": [
+            0,
+            10.25,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_remington_870",
+        "endernation:remington_870"
+      ]
+    },
+    {
+      "name": "rocket_launcher",
+      "base": "minecraft:blaze_rod",
+      "cmd": 1.0,
+      "item_model": "enderguns:rocket_launcher",
+      "source_model": "enderguns:weapon/rocket_launcher",
+      "source_sha256": "e3e39c4d0e9d682f6283a8bf1273d68ef73e4045354146b77d454e42b229f5d1",
+      "java_elements": 37,
+      "bedrock_cubes": 37,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2.75,
+            -5.25
+          ],
+          "scale": [
+            0.97,
+            1,
+            1
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2.75,
+            -5.25
+          ],
+          "scale": [
+            0.97,
+            1,
+            1
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -0.75
+          ],
+          "scale": [
+            0.94,
+            1,
+            1
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -0.75
+          ],
+          "scale": [
+            0.94,
+            1,
+            1
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            0,
+            -90
+          ],
+          "translation": [
+            -2,
+            7.75,
+            1.25
+          ],
+          "scale": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_rocket_launcher",
+        "endernation:rocket_launcher"
+      ]
+    },
+    {
+      "name": "spas_12",
+      "base": "minecraft:iron_pickaxe",
+      "cmd": 1.0,
+      "item_model": "enderguns:spas_12",
+      "source_model": "enderguns:weapon/spas_12",
+      "source_sha256": "e207e8d41664727df2635f38fcdec03d2a724e97d4f426f557c51bafaf2f3c03",
+      "java_elements": 100,
+      "bedrock_cubes": 100,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -100,
+            0
+          ],
+          "translation": [
+            2.25,
+            2.5,
+            -5.75
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -5.75
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            -64
+          ],
+          "translation": [
+            0,
+            5.5,
+            -1.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.25,
+            -5.5
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -93,
+            7
+          ],
+          "translation": [
+            0,
+            10.25,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_spas_12",
+        "endernation:spas_12"
+      ]
+    },
+    {
+      "name": "striker",
+      "base": "minecraft:golden_pickaxe",
+      "cmd": 1.0,
+      "item_model": "enderguns:striker",
+      "source_model": "enderguns:weapon/striker",
+      "source_sha256": "be79269e472a7b39ead7abcc7459f455b593ea896bd06bd6ae8b40b84b1147b2",
+      "java_elements": 70,
+      "bedrock_cubes": 70,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            -6.25
+          ],
+          "scale": [
+            0.95,
+            0.94,
+            0.94
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            -6.25
+          ],
+          "scale": [
+            0.95,
+            0.94,
+            0.94
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            -66
+          ],
+          "translation": [
+            0,
+            6.25,
+            -0.5
+          ],
+          "scale": [
+            0.88,
+            0.87,
+            0.87
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.88,
+            0.87,
+            0.87
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -93,
+            7
+          ],
+          "translation": [
+            0,
+            10.25,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_striker",
+        "endernation:striker"
+      ]
+    },
+    {
+      "name": "sv98",
+      "base": "minecraft:stone_axe",
+      "cmd": 1.0,
+      "item_model": "enderguns:sv98",
+      "source_model": "enderguns:weapon/sv98",
+      "source_sha256": "9dfdf33a075c90c46ed2b7106c21cd66696e94b452bd3aa93d109d37de1088a3",
+      "java_elements": 80,
+      "bedrock_cubes": 80,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -7.5
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            -7.5
+          ],
+          "scale": [
+            0.99,
+            0.99,
+            0.99
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            0,
+            0.75,
+            -5.75
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_sv98",
+        "endernation:sv98"
+      ]
+    },
+    {
+      "name": "bandage",
+      "base": "minecraft:paper",
+      "cmd": 1.0,
+      "item_model": "enderguns:bandage",
+      "source_model": "enderguns:utilities/bandage",
+      "source_sha256": "87aaadde020d7b97c18754fe74a9f067b539905d7647c0d7d8605a6d7ac88c78",
+      "java_elements": 0,
+      "bedrock_cubes": 96,
+      "generated_sprite": true,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            1
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            1
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_bandage",
+        "endernation:bandage"
+      ]
+    },
+    {
+      "name": "advanced_medikit",
+      "base": "minecraft:paper",
+      "cmd": 2.0,
+      "item_model": "enderguns:advanced_medikit",
+      "source_model": "enderguns:utilities/advanced_medikit",
+      "source_sha256": "7b54b50458e1eca2e221562caaa77cc37ff06f98a8c8be3db4650251a1708430",
+      "java_elements": 0,
+      "bedrock_cubes": 96,
+      "generated_sprite": true,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            1
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            1
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_advanced_medikit",
+        "endernation:advanced_medikit"
+      ]
+    },
+    {
+      "name": "flashbang",
+      "base": "minecraft:glowstone_dust",
+      "cmd": 1.0,
+      "item_model": "enderguns:flashbang",
+      "source_model": "enderguns:utilities/flashbang",
+      "source_sha256": "53978290da07e1c6f5a560b3cee743b63bef6ec43cd9839d0c39bc2af730fb3e",
+      "java_elements": 0,
+      "bedrock_cubes": 79,
+      "generated_sprite": true,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            4,
+            0.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            4,
+            0.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_flashbang",
+        "endernation:flashbang"
+      ]
+    },
+    {
+      "name": "bullet",
+      "base": "minecraft:snowball",
+      "cmd": 1.0,
+      "item_model": null,
+      "source_model": "minecraft:item/snowball/1",
+      "source_sha256": "c50f0d0e9ddec3a4c755836f02518e531f86f6569a5aa619c50d32f3f05f161e",
+      "java_elements": 0,
+      "bedrock_cubes": 32,
+      "generated_sprite": true,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            4,
+            0.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            4,
+            0.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_bullet"
+      ]
+    },
+    {
+      "name": "grenade",
+      "base": "minecraft:slime_ball",
+      "cmd": 1.0,
+      "item_model": "enderguns:grenade",
+      "source_model": "enderguns:utilities/grenade",
+      "source_sha256": "dd3221a04428973e035fb70775089f04faca850550dc320381c2b7aaa2999044",
+      "java_elements": 0,
+      "bedrock_cubes": 64,
+      "generated_sprite": true,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            4,
+            0.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            4,
+            0.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_grenade",
+        "endernation:grenade"
+      ]
+    },
+    {
+      "name": "pistol_ammo",
+      "base": "minecraft:gold_nugget",
+      "cmd": 1.0,
+      "item_model": "enderguns:pistol_ammo",
+      "source_model": "enderguns:ammo/pistol_ammo",
+      "source_sha256": "53f813106f054885465f58919320ae727709523f0ee711dea07579e5e0f18d53",
+      "java_elements": 1,
+      "bedrock_cubes": 1,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            35,
+            0,
+            35
+          ],
+          "translation": [
+            -2.5,
+            6,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            35,
+            0,
+            35
+          ],
+          "translation": [
+            -2.5,
+            6,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            -90
+          ],
+          "translation": [
+            -2,
+            0,
+            0
+          ],
+          "scale": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            -90
+          ],
+          "translation": [
+            -2,
+            0,
+            0
+          ],
+          "scale": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            10.75,
+            -5
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_pistol_ammo",
+        "endernation:pistol_ammo"
+      ]
+    },
+    {
+      "name": "rifle_ammo",
+      "base": "minecraft:flint",
+      "cmd": 1.0,
+      "item_model": "enderguns:rifle_ammo",
+      "source_model": "enderguns:ammo/rifle_ammo",
+      "source_sha256": "94c446edb3c00bf2afd553d0bf38278850f1908548ca4dd2001aca21d35b4e53",
+      "java_elements": 1,
+      "bedrock_cubes": 1,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            35,
+            0,
+            35
+          ],
+          "translation": [
+            -2.5,
+            6,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            35,
+            0,
+            35
+          ],
+          "translation": [
+            -2.5,
+            6,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            -90
+          ],
+          "translation": [
+            -2,
+            0,
+            0
+          ],
+          "scale": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            -90
+          ],
+          "translation": [
+            -2,
+            0,
+            0
+          ],
+          "scale": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            10.75,
+            -5
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_rifle_ammo",
+        "endernation:rifle_ammo"
+      ]
+    },
+    {
+      "name": "shotgun_ammo",
+      "base": "minecraft:wheat_seeds",
+      "cmd": 1.0,
+      "item_model": "enderguns:shotgun_ammo",
+      "source_model": "enderguns:ammo/shotgun_ammo",
+      "source_sha256": "5d5610d74a3566e0f7a312f0498ca5f1edc73b58778c84fece21da5eb81c2efa",
+      "java_elements": 1,
+      "bedrock_cubes": 1,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            35,
+            0,
+            35
+          ],
+          "translation": [
+            -2.5,
+            6,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            35,
+            0,
+            35
+          ],
+          "translation": [
+            -2.5,
+            6,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            -90
+          ],
+          "translation": [
+            -2,
+            0,
+            0
+          ],
+          "scale": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            -90
+          ],
+          "translation": [
+            -2,
+            0,
+            0
+          ],
+          "scale": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            10.75,
+            -5
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_shotgun_ammo",
+        "endernation:shotgun_ammo"
+      ]
+    },
+    {
+      "name": "sniper_ammo",
+      "base": "minecraft:clay_ball",
+      "cmd": 1.0,
+      "item_model": "enderguns:sniper_ammo",
+      "source_model": "enderguns:ammo/sniper_ammo",
+      "source_sha256": "93c2fb433a5ce96bf582cb85f8b8ace417edf1a153be928fa98c21b23e7cfb8c",
+      "java_elements": 1,
+      "bedrock_cubes": 1,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            35,
+            0,
+            35
+          ],
+          "translation": [
+            -2.5,
+            6,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            35,
+            0,
+            35
+          ],
+          "translation": [
+            -2.5,
+            6,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            -90
+          ],
+          "translation": [
+            -2,
+            0,
+            0
+          ],
+          "scale": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            -90
+          ],
+          "translation": [
+            -2,
+            0,
+            0
+          ],
+          "scale": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "translation": [
+            0,
+            10.75,
+            -5
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_sniper_ammo",
+        "endernation:sniper_ammo"
+      ]
+    },
+    {
+      "name": "rocket_launcher_ammo",
+      "base": "minecraft:ghast_tear",
+      "cmd": 1.0,
+      "item_model": "enderguns:rocket_launcher_ammo",
+      "source_model": "enderguns:ammo/rocket_launcher_ammo",
+      "source_sha256": "008a9affa2ef02d99eb2bf4ff65ca13520267c2314f640f8fab2b9b0e9c8c78f",
+      "java_elements": 0,
+      "bedrock_cubes": 34,
+      "generated_sprite": true,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            4,
+            0.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            4,
+            0.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "geyser_custom:eg_rocket_launcher_ammo",
+        "endernation:rocket_launcher_ammo"
+      ]
+    },
+    {
+      "name": "trash_bin",
+      "base": "minecraft:paper",
+      "cmd": null,
+      "item_model": "endernation:trash_bin",
+      "source_model": "endernation:item/trash_bin",
+      "source_sha256": "5e1ba7f4fa72683e88cf7f7410ec64dcb4166fdfa1e4be96d8ec7c36244d2cb1",
+      "java_elements": 27,
+      "bedrock_cubes": 27,
+      "generated_sprite": false,
+      "views": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            225,
+            0
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.4,
+            0.4,
+            0.4
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            45,
+            0
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.4,
+            0.4,
+            0.4
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            75,
+            45,
+            0
+          ],
+          "translation": [
+            0,
+            2.5,
+            0
+          ],
+          "scale": [
+            0.56,
+            0.56,
+            0.56
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            75,
+            45,
+            0
+          ],
+          "translation": [
+            0,
+            2.5,
+            0
+          ],
+          "scale": [
+            0.56,
+            0.56,
+            0.56
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "identifiers": [
+        "endernation:trash_bin"
+      ]
+    }
+  ],
+  "java_assets_changed": [
+    "assets/enderguns/models/ammo/rocket_launcher_ammo.json: corrected missing texture namespace"
+  ],
+  "client_acceptance": "pending",
+  "sounds": 32,
+  "glyphs": 73,
+  "geometry_count": 32,
+  "mapping_definitions": 62,
+  "artifacts": {
+    "EnderNation-Bedrock-26.3.mcpack": {
+      "sha256": "f79c253dd28510de8ccdb377e2cf47d6edb9ab9eef38e1eb4a4e885f25ae28fe",
+      "size": 9674977
+    },
+    "EnderNation-Geyser-Mappings-26.3.zip": {
+      "sha256": "5328aeb649f5048430450a5c15f1e01da41283bf95f69bfca2e09097600d0114",
+      "size": 1195
+    }
+  }
+}

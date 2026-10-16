@@ -1,7 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-      "layer0": "item/rocket_launcher_ammo"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "enderguns:item/rocket_launcher_ammo"
   }
-  
+}

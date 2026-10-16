@@ -1,0 +1,258 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.endernation.rocket_launcher.firstperson_righthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            60,
+            -40
+          ],
+          "position": [
+            4,
+            10,
+            4
+          ],
+          "scale": 1.5
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            2.75,
+            5.25
+          ],
+          "scale": [
+            0.97,
+            1,
+            1
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            90,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.endernation.rocket_launcher.firstperson_lefthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            60,
+            -40
+          ],
+          "position": [
+            4,
+            10,
+            4
+          ],
+          "scale": 1.5
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            2.75,
+            5.25
+          ],
+          "scale": [
+            0.97,
+            1,
+            1
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.endernation.rocket_launcher.thirdperson_righthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            13,
+            -3
+          ],
+          "scale": 1
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            2,
+            -0.75
+          ],
+          "scale": [
+            0.94,
+            1,
+            1
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            90,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.endernation.rocket_launcher.thirdperson_lefthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            13,
+            -3
+          ],
+          "scale": 1
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            2,
+            -0.75
+          ],
+          "scale": [
+            0.94,
+            1,
+            1
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.endernation.rocket_launcher.head": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            19.9,
+            0
+          ],
+          "scale": 1
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            1.25,
+            4.84375,
+            0.78125
+          ],
+          "scale": [
+            0.78125,
+            0.78125,
+            0.78125
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            -90
+          ]
+        }
+      }
+    },
+    "animation.endernation.rocket_launcher.hide_head": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "scale": 0
+        }
+      }
+    }
+  }
+}

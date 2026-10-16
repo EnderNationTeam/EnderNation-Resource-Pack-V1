@@ -1,0 +1,258 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.endernation.aa_12.firstperson_righthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            60,
+            -40
+          ],
+          "position": [
+            4,
+            10,
+            4
+          ],
+          "scale": 1.5
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            3,
+            5.75
+          ],
+          "scale": [
+            0.96,
+            0.97,
+            0.96
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            90,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.endernation.aa_12.firstperson_lefthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            60,
+            -40
+          ],
+          "position": [
+            4,
+            10,
+            4
+          ],
+          "scale": 1.5
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            3,
+            5.75
+          ],
+          "scale": [
+            0.96,
+            0.97,
+            0.96
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.endernation.aa_12.thirdperson_righthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            13,
+            -3
+          ],
+          "scale": 1
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            6,
+            -1.25
+          ],
+          "scale": [
+            0.87,
+            0.88,
+            0.87
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            90,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            -63
+          ]
+        }
+      }
+    },
+    "animation.endernation.aa_12.thirdperson_lefthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            13,
+            -3
+          ],
+          "scale": 1
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0.75,
+            -5.25
+          ],
+          "scale": [
+            0.87,
+            0.88,
+            0.87
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            -90,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.endernation.aa_12.head": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            19.9,
+            0
+          ],
+          "scale": 1
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            -0.0,
+            6.40625,
+            0.0
+          ],
+          "scale": [
+            0.625,
+            0.625,
+            0.625
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            93,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            7
+          ]
+        }
+      }
+    },
+    "animation.endernation.aa_12.hide_head": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "scale": 0
+        }
+      }
+    }
+  }
+}

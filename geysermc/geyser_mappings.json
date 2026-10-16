@@ -1,251 +1,685 @@
 {
-    "format_version":  "1",
-    "items":  {
-                  "minecraft:diamond_pickaxe":  [
-                                                    {
-                                                        "name":  "eg_aa_12",
-                                                        "allow_offhand":  true,
-                                                        "icon":  "eg_aa_12",
-                                                        "custom_model_data":  1
-                                                    }
-                                                ],
-                  "minecraft:iron_hoe":  [
-                                             {
-                                                 "name":  "eg_ak_47",
-                                                 "allow_offhand":  true,
-                                                 "icon":  "eg_ak_47",
-                                                 "custom_model_data":  1
-                                             }
-                                         ],
-                  "minecraft:wooden_axe":  [
-                                               {
-                                                   "name":  "eg_cz_550",
-                                                   "allow_offhand":  true,
-                                                   "icon":  "eg_cz_550",
-                                                   "custom_model_data":  1
-                                               }
-                                           ],
-                  "minecraft:diamond_shovel":  [
-                                                   {
-                                                       "name":  "eg_desert_eagle",
-                                                       "allow_offhand":  true,
-                                                       "icon":  "eg_desert_eagle",
-                                                       "custom_model_data":  1
-                                                   }
-                                               ],
-                  "minecraft:golden_hoe":  [
-                                               {
-                                                   "name":  "eg_fal",
-                                                   "allow_offhand":  true,
-                                                   "icon":  "eg_fal",
-                                                   "custom_model_data":  1
-                                               }
-                                           ],
-                  "minecraft:golden_shovel":  [
-                                                  {
-                                                      "name":  "eg_five_seven",
-                                                      "allow_offhand":  true,
-                                                      "icon":  "eg_five_seven",
-                                                      "custom_model_data":  1
-                                                  }
-                                              ],
-                  "minecraft:stone_shovel":  [
-                                                 {
-                                                     "name":  "eg_g17",
-                                                     "allow_offhand":  true,
-                                                     "icon":  "eg_g17",
-                                                     "custom_model_data":  1
-                                                 }
-                                             ],
-                  "minecraft:wooden_pickaxe":  [
-                                                   {
-                                                       "name":  "eg_m1014",
-                                                       "allow_offhand":  true,
-                                                       "icon":  "eg_m1014",
-                                                       "custom_model_data":  1
-                                                   }
-                                               ],
-                  "minecraft:diamond_hoe":  [
-                                                {
-                                                    "name":  "eg_m16",
-                                                    "allow_offhand":  true,
-                                                    "icon":  "eg_m16",
-                                                    "custom_model_data":  1
-                                                }
-                                            ],
-                  "minecraft:iron_shovel":  [
-                                                {
-                                                    "name":  "eg_m1911",
-                                                    "allow_offhand":  true,
-                                                    "icon":  "eg_m1911",
-                                                    "custom_model_data":  1
-                                                }
-                                            ],
-                  "minecraft:iron_axe":  [
-                                             {
-                                                 "name":  "eg_m39",
-                                                 "allow_offhand":  true,
-                                                 "icon":  "eg_m39",
-                                                 "custom_model_data":  1
-                                             }
-                                         ],
-                  "minecraft:wooden_shovel":  [
-                                                  {
-                                                      "name":  "eg_m9",
-                                                      "allow_offhand":  true,
-                                                      "icon":  "eg_m9",
-                                                      "custom_model_data":  1
-                                                  }
-                                              ],
-                  "minecraft:diamond_axe":  [
-                                                {
-                                                    "name":  "eg_m98b",
-                                                    "allow_offhand":  true,
-                                                    "icon":  "eg_m98b",
-                                                    "custom_model_data":  1
-                                                }
-                                            ],
-                  "minecraft:wooden_hoe":  [
-                                               {
-                                                   "name":  "eg_mp7",
-                                                   "allow_offhand":  true,
-                                                   "icon":  "eg_mp7",
-                                                   "custom_model_data":  1
-                                               }
-                                           ],
-                  "minecraft:golden_axe":  [
-                                               {
-                                                   "name":  "eg_msr",
-                                                   "allow_offhand":  true,
-                                                   "icon":  "eg_msr",
-                                                   "custom_model_data":  1
-                                               }
-                                           ],
-                  "minecraft:stone_hoe":  [
-                                              {
-                                                  "name":  "eg_p90",
-                                                  "allow_offhand":  true,
-                                                  "icon":  "eg_p90",
-                                                  "custom_model_data":  1
-                                              }
-                                          ],
-                  "minecraft:stone_pickaxe":  [
-                                                  {
-                                                      "name":  "eg_remington_870",
-                                                      "allow_offhand":  true,
-                                                      "icon":  "eg_remington_870",
-                                                      "custom_model_data":  1
-                                                  }
-                                              ],
-                  "minecraft:blaze_rod":  [
-                                              {
-                                                  "name":  "eg_rocket_launcher",
-                                                  "allow_offhand":  true,
-                                                  "icon":  "eg_rocket_launcher",
-                                                  "custom_model_data":  1
-                                              }
-                                          ],
-                  "minecraft:iron_pickaxe":  [
-                                                 {
-                                                     "name":  "eg_spas_12",
-                                                     "allow_offhand":  true,
-                                                     "icon":  "eg_spas_12",
-                                                     "custom_model_data":  1
-                                                 }
-                                             ],
-                  "minecraft:golden_pickaxe":  [
-                                                   {
-                                                       "name":  "eg_striker",
-                                                       "allow_offhand":  true,
-                                                       "icon":  "eg_striker",
-                                                       "custom_model_data":  1
-                                                   }
-                                               ],
-                  "minecraft:stone_axe":  [
-                                              {
-                                                  "name":  "eg_sv98",
-                                                  "allow_offhand":  true,
-                                                  "icon":  "eg_sv98",
-                                                  "custom_model_data":  1
-                                              }
-                                          ],
-                  "minecraft:paper":  [
-                                          {
-                                              "name":  "eg_bandage",
-                                              "allow_offhand":  true,
-                                              "icon":  "eg_bandage",
-                                              "custom_model_data":  1
-                                          },
-                                          {
-                                              "name":  "eg_advanced_medikit",
-                                              "allow_offhand":  true,
-                                              "icon":  "eg_advanced_medikit",
-                                              "custom_model_data":  2
-                                          }
-                                      ],
-                  "minecraft:glowstone_dust":  [
-                                                   {
-                                                       "name":  "eg_flashbang",
-                                                       "allow_offhand":  true,
-                                                       "icon":  "eg_flashbang",
-                                                       "custom_model_data":  1
-                                                   }
-                                               ],
-                  "minecraft:snowball":  [
-                                             {
-                                                 "name":  "eg_bullet",
-                                                 "allow_offhand":  true,
-                                                 "icon":  "eg_bullet",
-                                                 "custom_model_data":  1
-                                             }
-                                         ],
-                  "minecraft:slime_ball":  [
-                                               {
-                                                   "name":  "eg_grenade",
-                                                   "allow_offhand":  true,
-                                                   "icon":  "eg_grenade",
-                                                   "custom_model_data":  1
-                                               }
-                                           ],
-                  "minecraft:gold_nugget":  [
-                                                {
-                                                    "name":  "eg_pistol_ammo",
-                                                    "allow_offhand":  true,
-                                                    "icon":  "eg_pistol_ammo",
-                                                    "custom_model_data":  1
-                                                }
-                                            ],
-                  "minecraft:flint":  [
-                                          {
-                                              "name":  "eg_rifle_ammo",
-                                              "allow_offhand":  true,
-                                              "icon":  "eg_rifle_ammo",
-                                              "custom_model_data":  1
-                                          }
-                                      ],
-                  "minecraft:wheat_seeds":  [
-                                                {
-                                                    "name":  "eg_shotgun_ammo",
-                                                    "allow_offhand":  true,
-                                                    "icon":  "eg_shotgun_ammo",
-                                                    "custom_model_data":  1
-                                                }
-                                            ],
-                  "minecraft:clay_ball":  [
-                                              {
-                                                  "name":  "eg_sniper_ammo",
-                                                  "allow_offhand":  true,
-                                                  "icon":  "eg_sniper_ammo",
-                                                  "custom_model_data":  1
-                                              }
-                                          ],
-                  "minecraft:ghast_tear":  [
-                                               {
-                                                   "name":  "eg_rocket_launcher_ammo",
-                                                   "allow_offhand":  true,
-                                                   "icon":  "eg_rocket_launcher_ammo",
-                                                   "custom_model_data":  1
-                                               }
-                                           ]
-              }
+  "format_version": 2,
+  "items": {
+    "minecraft:diamond_pickaxe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_aa_12",
+        "bedrock_options": {
+          "icon": "eg_aa_12",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:aa_12",
+        "bedrock_identifier": "endernation:aa_12",
+        "bedrock_options": {
+          "icon": "eg_aa_12",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:iron_hoe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_ak_47",
+        "bedrock_options": {
+          "icon": "eg_ak_47",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:ak_47",
+        "bedrock_identifier": "endernation:ak_47",
+        "bedrock_options": {
+          "icon": "eg_ak_47",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:wooden_axe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_cz_550",
+        "bedrock_options": {
+          "icon": "eg_cz_550",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:cz_550",
+        "bedrock_identifier": "endernation:cz_550",
+        "bedrock_options": {
+          "icon": "eg_cz_550",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:diamond_shovel": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_desert_eagle",
+        "bedrock_options": {
+          "icon": "eg_desert_eagle",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:desert_eagle",
+        "bedrock_identifier": "endernation:desert_eagle",
+        "bedrock_options": {
+          "icon": "eg_desert_eagle",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:golden_hoe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_fal",
+        "bedrock_options": {
+          "icon": "eg_fal",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:fal",
+        "bedrock_identifier": "endernation:fal",
+        "bedrock_options": {
+          "icon": "eg_fal",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:golden_shovel": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_five_seven",
+        "bedrock_options": {
+          "icon": "eg_five_seven",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:five_seven",
+        "bedrock_identifier": "endernation:five_seven",
+        "bedrock_options": {
+          "icon": "eg_five_seven",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:stone_shovel": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_g17",
+        "bedrock_options": {
+          "icon": "eg_g17",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:g17",
+        "bedrock_identifier": "endernation:g17",
+        "bedrock_options": {
+          "icon": "eg_g17",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:wooden_pickaxe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_m1014",
+        "bedrock_options": {
+          "icon": "eg_m1014",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:m1014",
+        "bedrock_identifier": "endernation:m1014",
+        "bedrock_options": {
+          "icon": "eg_m1014",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:diamond_hoe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_m16",
+        "bedrock_options": {
+          "icon": "eg_m16",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:m16",
+        "bedrock_identifier": "endernation:m16",
+        "bedrock_options": {
+          "icon": "eg_m16",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:iron_shovel": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_m1911",
+        "bedrock_options": {
+          "icon": "eg_m1911",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:m1911",
+        "bedrock_identifier": "endernation:m1911",
+        "bedrock_options": {
+          "icon": "eg_m1911",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:iron_axe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_m39",
+        "bedrock_options": {
+          "icon": "eg_m39",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:m39",
+        "bedrock_identifier": "endernation:m39",
+        "bedrock_options": {
+          "icon": "eg_m39",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:wooden_shovel": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_m9",
+        "bedrock_options": {
+          "icon": "eg_m9",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:m9",
+        "bedrock_identifier": "endernation:m9",
+        "bedrock_options": {
+          "icon": "eg_m9",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:diamond_axe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_m98b",
+        "bedrock_options": {
+          "icon": "eg_m98b",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:m98b",
+        "bedrock_identifier": "endernation:m98b",
+        "bedrock_options": {
+          "icon": "eg_m98b",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:wooden_hoe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_mp7",
+        "bedrock_options": {
+          "icon": "eg_mp7",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:mp7",
+        "bedrock_identifier": "endernation:mp7",
+        "bedrock_options": {
+          "icon": "eg_mp7",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:golden_axe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_msr",
+        "bedrock_options": {
+          "icon": "eg_msr",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:msr",
+        "bedrock_identifier": "endernation:msr",
+        "bedrock_options": {
+          "icon": "eg_msr",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:stone_hoe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_p90",
+        "bedrock_options": {
+          "icon": "eg_p90",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:p90",
+        "bedrock_identifier": "endernation:p90",
+        "bedrock_options": {
+          "icon": "eg_p90",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:stone_pickaxe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_remington_870",
+        "bedrock_options": {
+          "icon": "eg_remington_870",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:remington_870",
+        "bedrock_identifier": "endernation:remington_870",
+        "bedrock_options": {
+          "icon": "eg_remington_870",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:blaze_rod": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_rocket_launcher",
+        "bedrock_options": {
+          "icon": "eg_rocket_launcher",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:rocket_launcher",
+        "bedrock_identifier": "endernation:rocket_launcher",
+        "bedrock_options": {
+          "icon": "eg_rocket_launcher",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:iron_pickaxe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_spas_12",
+        "bedrock_options": {
+          "icon": "eg_spas_12",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:spas_12",
+        "bedrock_identifier": "endernation:spas_12",
+        "bedrock_options": {
+          "icon": "eg_spas_12",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:golden_pickaxe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_striker",
+        "bedrock_options": {
+          "icon": "eg_striker",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:striker",
+        "bedrock_identifier": "endernation:striker",
+        "bedrock_options": {
+          "icon": "eg_striker",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:stone_axe": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_sv98",
+        "bedrock_options": {
+          "icon": "eg_sv98",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:sv98",
+        "bedrock_identifier": "endernation:sv98",
+        "bedrock_options": {
+          "icon": "eg_sv98",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:paper": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_bandage",
+        "bedrock_options": {
+          "icon": "eg_bandage",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:bandage",
+        "bedrock_identifier": "endernation:bandage",
+        "bedrock_options": {
+          "icon": "eg_bandage",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "legacy",
+        "custom_model_data": 2.0,
+        "bedrock_identifier": "geyser_custom:eg_advanced_medikit",
+        "bedrock_options": {
+          "icon": "eg_advanced_medikit",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:advanced_medikit",
+        "bedrock_identifier": "endernation:advanced_medikit",
+        "bedrock_options": {
+          "icon": "eg_advanced_medikit",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "endernation:trash_bin",
+        "bedrock_identifier": "endernation:trash_bin",
+        "bedrock_options": {
+          "icon": "eg_trash_bin",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:glowstone_dust": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_flashbang",
+        "bedrock_options": {
+          "icon": "eg_flashbang",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:flashbang",
+        "bedrock_identifier": "endernation:flashbang",
+        "bedrock_options": {
+          "icon": "eg_flashbang",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:snowball": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_bullet",
+        "bedrock_options": {
+          "icon": "eg_bullet",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:slime_ball": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_grenade",
+        "bedrock_options": {
+          "icon": "eg_grenade",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:grenade",
+        "bedrock_identifier": "endernation:grenade",
+        "bedrock_options": {
+          "icon": "eg_grenade",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:gold_nugget": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_pistol_ammo",
+        "bedrock_options": {
+          "icon": "eg_pistol_ammo",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:pistol_ammo",
+        "bedrock_identifier": "endernation:pistol_ammo",
+        "bedrock_options": {
+          "icon": "eg_pistol_ammo",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:flint": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_rifle_ammo",
+        "bedrock_options": {
+          "icon": "eg_rifle_ammo",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:rifle_ammo",
+        "bedrock_identifier": "endernation:rifle_ammo",
+        "bedrock_options": {
+          "icon": "eg_rifle_ammo",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:wheat_seeds": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_shotgun_ammo",
+        "bedrock_options": {
+          "icon": "eg_shotgun_ammo",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:shotgun_ammo",
+        "bedrock_identifier": "endernation:shotgun_ammo",
+        "bedrock_options": {
+          "icon": "eg_shotgun_ammo",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:clay_ball": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_sniper_ammo",
+        "bedrock_options": {
+          "icon": "eg_sniper_ammo",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:sniper_ammo",
+        "bedrock_identifier": "endernation:sniper_ammo",
+        "bedrock_options": {
+          "icon": "eg_sniper_ammo",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ],
+    "minecraft:ghast_tear": [
+      {
+        "type": "legacy",
+        "custom_model_data": 1.0,
+        "bedrock_identifier": "geyser_custom:eg_rocket_launcher_ammo",
+        "bedrock_options": {
+          "icon": "eg_rocket_launcher_ammo",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      },
+      {
+        "type": "definition",
+        "model": "enderguns:rocket_launcher_ammo",
+        "bedrock_identifier": "endernation:rocket_launcher_ammo",
+        "bedrock_options": {
+          "icon": "eg_rocket_launcher_ammo",
+          "allow_offhand": true,
+          "display_handheld": false
+        }
+      }
+    ]
+  }
 }

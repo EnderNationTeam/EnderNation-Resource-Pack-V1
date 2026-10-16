@@ -1,0 +1,258 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.endernation.sniper_ammo.firstperson_righthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            60,
+            -40
+          ],
+          "position": [
+            4,
+            10,
+            4
+          ],
+          "scale": 1.5
+        },
+        "display_x": {
+          "rotation": [
+            -35,
+            0,
+            0
+          ],
+          "position": [
+            2.5,
+            6,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            35
+          ]
+        }
+      }
+    },
+    "animation.endernation.sniper_ammo.firstperson_lefthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            60,
+            -40
+          ],
+          "position": [
+            4,
+            10,
+            4
+          ],
+          "scale": 1.5
+        },
+        "display_x": {
+          "rotation": [
+            -35,
+            0,
+            0
+          ],
+          "position": [
+            -2.5,
+            6,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            35
+          ]
+        }
+      }
+    },
+    "animation.endernation.sniper_ammo.thirdperson_righthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            13,
+            -3
+          ],
+          "scale": 1
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            2,
+            0,
+            0
+          ],
+          "scale": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            -180,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            -90
+          ]
+        }
+      }
+    },
+    "animation.endernation.sniper_ammo.thirdperson_lefthand": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            13,
+            -3
+          ],
+          "scale": 1
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            -2,
+            0,
+            0
+          ],
+          "scale": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            -180,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            -90
+          ]
+        }
+      }
+    },
+    "animation.endernation.sniper_ammo.head": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            19.9,
+            0
+          ],
+          "scale": 1
+        },
+        "display_x": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            -0.0,
+            6.71875,
+            -3.125
+          ],
+          "scale": [
+            0.625,
+            0.625,
+            0.625
+          ]
+        },
+        "display_y": {
+          "rotation": [
+            0,
+            90,
+            0
+          ]
+        },
+        "display_z": {
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.endernation.sniper_ammo.hide_head": {
+      "loop": true,
+      "bones": {
+        "anchor": {
+          "scale": 0
+        }
+      }
+    }
+  }
+}

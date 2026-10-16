@@ -5,16 +5,27 @@
     "name": "EnderNation-Resource-Pack-Bedrock",
     "platform_locked": false,
     "uuid": "5d41b684-e430-4efc-9043-7639f0047c33",
-    "version": [1, 21, 11],
-    "min_engine_version": [1, 21, 0]
+    "version": [
+      1,
+      21,
+      12
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
   },
   "modules": [
     {
       "description": "EnderNation Geyser Resource Pack",
       "type": "resources",
       "uuid": "fe80ac6d-4854-4d30-86e9-6d0a7cc0ff6a",
-      "version": [1, 21, 11]
+      "version": [
+        1,
+        21,
+        12
+      ]
     }
   ]
 }
-

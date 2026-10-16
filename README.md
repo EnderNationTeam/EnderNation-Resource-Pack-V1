@@ -8,7 +8,7 @@ Technische Projektdoku für das aktuelle Pack-Setup.
 
 ## Status
 
-- Zielversion: **Minecraft Java 1.21.11**
+- Zielversion: **Minecraft Java 26.3** (bestehender 1.21.11+-Modellaufbau)
 - Das alte System mit **einzelnen Vanilla-Basisitems pro Waffe** wurde wiederhergestellt
 - Aktive Java-Itemdefinitionen liegen in `assets/minecraft/items/`
 - Bedrock-/Geyser-Struktur liegt zusätzlich in `bedrock/` und `geysermc/`
@@ -150,3 +150,7 @@ Quelle: `geysermc/cmd_registry.json`
 - Bedrock nutzt das `.mcpack` aus `dist/`
 - Geyser benötigt zusätzlich die Dateien aus `geysermc/` bzw. aus `EnderNation-Geyser-Config-1.21.11.zip`
 - Die bestehenden Unicode-/Font-Glyphen in `assets/minecraft/font/default.json` wurden nicht geändert
+
+## Bedrock-Kandidat 26.3 / ai-dev
+
+Die neue Bedrock-Konvertierung mit echten 3D-Modellen, getrennten Handansichten und Geyser-v2-Mappings ist in [docs/BEDROCK-26.3.md](docs/BEDROCK-26.3.md) beschrieben. Servertests und nativer Geyser-Import sind bestanden; echte Client-Abnahme und produktive Pack-Installation stehen aus.

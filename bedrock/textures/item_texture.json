@@ -1,102 +1,102 @@
 {
-  "resource_pack_name": "endernation_geyser_custom",
+  "resource_pack_name": "endernation",
   "texture_name": "atlas.items",
   "texture_data": {
     "eg_aa_12": {
-      "textures": "textures/enderguns/aa_12"
-    },
-    "eg_advanced_medikit": {
-      "textures": "textures/enderguns/advanced_medikit"
+      "textures": "textures/endernation/icons/aa_12"
     },
     "eg_ak_47": {
-      "textures": "textures/enderguns/ak_47"
-    },
-    "eg_bandage": {
-      "textures": "textures/enderguns/bandage"
-    },
-    "eg_bullet": {
-      "textures": "textures/enderguns/bullet"
+      "textures": "textures/endernation/icons/ak_47"
     },
     "eg_cz_550": {
-      "textures": "textures/enderguns/cz_550"
+      "textures": "textures/endernation/icons/cz_550"
     },
     "eg_desert_eagle": {
-      "textures": "textures/enderguns/desert_eagle"
+      "textures": "textures/endernation/icons/desert_eagle"
     },
     "eg_fal": {
-      "textures": "textures/enderguns/fal"
+      "textures": "textures/endernation/icons/fal"
     },
     "eg_five_seven": {
-      "textures": "textures/enderguns/five_seven"
-    },
-    "eg_flashbang": {
-      "textures": "textures/enderguns/flashbang"
+      "textures": "textures/endernation/icons/five_seven"
     },
     "eg_g17": {
-      "textures": "textures/enderguns/g17"
-    },
-    "eg_grenade": {
-      "textures": "textures/enderguns/grenade"
+      "textures": "textures/endernation/icons/g17"
     },
     "eg_m1014": {
-      "textures": "textures/enderguns/m1014"
+      "textures": "textures/endernation/icons/m1014"
     },
     "eg_m16": {
-      "textures": "textures/enderguns/m16"
+      "textures": "textures/endernation/icons/m16"
     },
     "eg_m1911": {
-      "textures": "textures/enderguns/m1911"
+      "textures": "textures/endernation/icons/m1911"
     },
     "eg_m39": {
-      "textures": "textures/enderguns/m39"
+      "textures": "textures/endernation/icons/m39"
     },
     "eg_m9": {
-      "textures": "textures/enderguns/m9"
+      "textures": "textures/endernation/icons/m9"
     },
     "eg_m98b": {
-      "textures": "textures/enderguns/m89b"
+      "textures": "textures/endernation/icons/m98b"
     },
     "eg_mp7": {
-      "textures": "textures/enderguns/mp7"
+      "textures": "textures/endernation/icons/mp7"
     },
     "eg_msr": {
-      "textures": "textures/enderguns/msr"
+      "textures": "textures/endernation/icons/msr"
     },
     "eg_p90": {
-      "textures": "textures/enderguns/p90"
-    },
-    "eg_pistol_ammo": {
-      "textures": "textures/enderguns/pistol_ammo"
+      "textures": "textures/endernation/icons/p90"
     },
     "eg_remington_870": {
-      "textures": "textures/enderguns/remington_870"
-    },
-    "eg_rifle_ammo": {
-      "textures": "textures/enderguns/rifle_ammo"
+      "textures": "textures/endernation/icons/remington_870"
     },
     "eg_rocket_launcher": {
-      "textures": "textures/enderguns/rocket_launcher"
-    },
-    "eg_rocket_launcher_ammo": {
-      "textures": "textures/enderguns/rocket_launcher_ammo"
-    },
-    "eg_shotgun_ammo": {
-      "textures": "textures/enderguns/shotgun_ammo"
-    },
-    "eg_sniper_ammo": {
-      "textures": "textures/enderguns/sniper_ammo"
+      "textures": "textures/endernation/icons/rocket_launcher"
     },
     "eg_spas_12": {
-      "textures": "textures/enderguns/spas_12"
+      "textures": "textures/endernation/icons/spas_12"
     },
     "eg_striker": {
-      "textures": "textures/enderguns/striker"
+      "textures": "textures/endernation/icons/striker"
     },
     "eg_sv98": {
-      "textures": "textures/enderguns/sv98"
+      "textures": "textures/endernation/icons/sv98"
+    },
+    "eg_bandage": {
+      "textures": "textures/endernation/icons/bandage"
+    },
+    "eg_advanced_medikit": {
+      "textures": "textures/endernation/icons/advanced_medikit"
+    },
+    "eg_flashbang": {
+      "textures": "textures/endernation/icons/flashbang"
+    },
+    "eg_bullet": {
+      "textures": "textures/endernation/icons/bullet"
+    },
+    "eg_grenade": {
+      "textures": "textures/endernation/icons/grenade"
+    },
+    "eg_pistol_ammo": {
+      "textures": "textures/endernation/icons/pistol_ammo"
+    },
+    "eg_rifle_ammo": {
+      "textures": "textures/endernation/icons/rifle_ammo"
+    },
+    "eg_shotgun_ammo": {
+      "textures": "textures/endernation/icons/shotgun_ammo"
+    },
+    "eg_sniper_ammo": {
+      "textures": "textures/endernation/icons/sniper_ammo"
+    },
+    "eg_rocket_launcher_ammo": {
+      "textures": "textures/endernation/icons/rocket_launcher_ammo"
+    },
+    "eg_trash_bin": {
+      "textures": "textures/endernation/icons/trash_bin"
     }
   }
 }
-
-
-

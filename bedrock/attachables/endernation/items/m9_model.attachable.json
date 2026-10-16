@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "endernation:m9",
+      "materials": {
+        "default": "entity_alphatest_one_sided",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/endernation/generated/m9",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.endernation.m9"
+      },
+      "animations": {
+        "firstperson_righthand": "animation.endernation.m9.firstperson_righthand",
+        "firstperson_lefthand": "animation.endernation.m9.firstperson_lefthand",
+        "thirdperson_righthand": "animation.endernation.m9.thirdperson_righthand",
+        "thirdperson_lefthand": "animation.endernation.m9.thirdperson_lefthand",
+        "head": "animation.endernation.m9.head",
+        "hide_head": "animation.endernation.m9.hide_head"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "firstperson_righthand": "c.is_first_person && c.item_slot == 'main_hand'"
+          },
+          {
+            "firstperson_lefthand": "c.is_first_person && c.item_slot == 'off_hand'"
+          },
+          {
+            "thirdperson_righthand": "!c.is_first_person && c.item_slot == 'main_hand'"
+          },
+          {
+            "thirdperson_lefthand": "!c.is_first_person && c.item_slot == 'off_hand'"
+          },
+          {
+            "head": "!c.is_first_person && c.item_slot == 'head'"
+          },
+          {
+            "hide_head": "c.is_first_person && c.item_slot == 'head'"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "endernation:pistol_ammo",
+      "materials": {
+        "default": "entity_alphatest_one_sided",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/endernation/generated/pistol_ammo",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.endernation.pistol_ammo"
+      },
+      "animations": {
+        "firstperson_righthand": "animation.endernation.pistol_ammo.firstperson_righthand",
+        "firstperson_lefthand": "animation.endernation.pistol_ammo.firstperson_lefthand",
+        "thirdperson_righthand": "animation.endernation.pistol_ammo.thirdperson_righthand",
+        "thirdperson_lefthand": "animation.endernation.pistol_ammo.thirdperson_lefthand",
+        "head": "animation.endernation.pistol_ammo.head",
+        "hide_head": "animation.endernation.pistol_ammo.hide_head"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "firstperson_righthand": "c.is_first_person && c.item_slot == 'main_hand'"
+          },
+          {
+            "firstperson_lefthand": "c.is_first_person && c.item_slot == 'off_hand'"
+          },
+          {
+            "thirdperson_righthand": "!c.is_first_person && c.item_slot == 'main_hand'"
+          },
+          {
+            "thirdperson_lefthand": "!c.is_first_person && c.item_slot == 'off_hand'"
+          },
+          {
+            "head": "!c.is_first_person && c.item_slot == 'head'"
+          },
+          {
+            "hide_head": "c.is_first_person && c.item_slot == 'head'"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.item_default"
+      ]
+    }
+  }
+}

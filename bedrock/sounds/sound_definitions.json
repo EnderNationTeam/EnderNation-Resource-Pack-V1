@@ -1,0 +1,581 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "minecraft:flashbanggg": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/flashbanggg",
+          "volume": 0.5
+        }
+      ]
+    },
+    "flashbanggg": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/flashbanggg",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:hitmarker": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/hitmarker",
+          "volume": 0.5
+        }
+      ]
+    },
+    "hitmarker": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/hitmarker",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:kill": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/kill",
+          "volume": 0.5
+        }
+      ]
+    },
+    "kill": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/kill",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:demonic": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/demonic",
+          "volume": 0.5
+        }
+      ]
+    },
+    "demonic": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/demonic",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:never": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/never",
+          "volume": 0.5
+        }
+      ]
+    },
+    "never": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/never",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:scare2": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/scare2",
+          "volume": 0.5
+        }
+      ]
+    },
+    "scare2": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/scare2",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:ssstik": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/ssstik",
+          "volume": 0.5
+        }
+      ]
+    },
+    "ssstik": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/ssstik",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:aa12": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/aa12",
+          "volume": 0.5
+        }
+      ]
+    },
+    "aa12": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/aa12",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:spas12": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/spas12",
+          "volume": 0.5
+        }
+      ]
+    },
+    "spas12": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/spas12",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:striker": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/striker",
+          "volume": 0.5
+        }
+      ]
+    },
+    "striker": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/striker",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:remington870": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/remington870",
+          "volume": 0.5
+        }
+      ]
+    },
+    "remington870": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/remington870",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:m1014": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m1014",
+          "volume": 0.5
+        }
+      ]
+    },
+    "m1014": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m1014",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:m98b": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m98b",
+          "volume": 0.5
+        }
+      ]
+    },
+    "m98b": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m98b",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:m39": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m39",
+          "volume": 0.5
+        }
+      ]
+    },
+    "m39": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m39",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:msr": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/msr",
+          "volume": 0.5
+        }
+      ]
+    },
+    "msr": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/msr",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:sv98": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/sv98",
+          "volume": 0.5
+        }
+      ]
+    },
+    "sv98": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/sv98",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:cz550": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/cz550",
+          "volume": 0.5
+        }
+      ]
+    },
+    "cz550": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/cz550",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:mp7": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/mp7",
+          "volume": 0.5
+        }
+      ]
+    },
+    "mp7": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/mp7",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:p90": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/p90",
+          "volume": 0.5
+        }
+      ]
+    },
+    "p90": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/p90",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:fal": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/fal",
+          "volume": 0.5
+        }
+      ]
+    },
+    "fal": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/fal",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:ak47": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/ak47",
+          "volume": 0.5
+        }
+      ]
+    },
+    "ak47": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/ak47",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:m16": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m16",
+          "volume": 0.5
+        }
+      ]
+    },
+    "m16": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m16",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:m9": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m9",
+          "volume": 0.5
+        }
+      ]
+    },
+    "m9": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m9",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:g17": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/g17",
+          "volume": 0.5
+        }
+      ]
+    },
+    "g17": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/g17",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:fiveseven": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/fiveseven",
+          "volume": 0.5
+        }
+      ]
+    },
+    "fiveseven": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/fiveseven",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:m1911": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m1911",
+          "volume": 0.5
+        }
+      ]
+    },
+    "m1911": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/m1911",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:deserteagle": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/deserteagle",
+          "volume": 0.5
+        }
+      ]
+    },
+    "deserteagle": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/deserteagle",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:waitmusic": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/waitmusic",
+          "volume": 0.5
+        }
+      ]
+    },
+    "waitmusic": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/waitmusic",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:notification": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/notification",
+          "volume": 0.5
+        }
+      ]
+    },
+    "notification": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/notification",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:report_notification": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/report_notification",
+          "volume": 0.5
+        }
+      ]
+    },
+    "report_notification": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/report_notification",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:warn_notification": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/warn_notification",
+          "volume": 0.5
+        }
+      ]
+    },
+    "warn_notification": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/warn_notification",
+          "volume": 0.5
+        }
+      ]
+    },
+    "minecraft:error_notification": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/error_notification",
+          "volume": 0.5
+        }
+      ]
+    },
+    "error_notification": {
+      "category": "neutral",
+      "sounds": [
+        {
+          "name": "sounds/minecraft/error_notification",
+          "volume": 0.5
+        }
+      ]
+    }
+  }
+}
