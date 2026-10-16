@@ -1,6 +1,6 @@
 # Bedrock-Kompatibilität: Entwicklungskandidat 16.10.2026
 
-**Gebaut und auf dem Server geprüft, noch nicht installiert.** Die exakte Darstellung mit Java- und Bedrock-Clients steht zur Abnahme aus. Das native Geyser-Prüfprogramm bestätigt keine identische Kamera-/Handdarstellung.
+**Nach ausdrücklicher Freigabe installiert; visuelle Abnahme läuft.** Der Proxy wurde einmal neu gestartet. Reine Pack-Korrekturen werden bei unveränderten Mappings über Geysers dokumentierten Reload geladen; sämtliche Minecraft-Java-Prozesse bleiben dabei unverändert. Das native Geyser-Prüfprogramm bestätigt keine identische Kamera-/Handdarstellung.
 
 ## Grundlage
 
@@ -14,7 +14,7 @@ Die vorherige aktive Bedrock-Fassung verwendete für die Waffen eine gemeinsame 
 - 62 eindeutige Geyser-v2-Definitionen für vorhandene Custom-Model-Data- und `item_model`-Varianten. Die 31 bisherigen `geyser_custom:eg_*`-IDs bleiben kompatibel; zusätzliche Modellvarianten erhalten eigene IDs. Das Projektil besitzt ausschließlich die tatsächlich vorhandene CMD-Variante.
 - Eigene Inventarsymbole aus den Java-GUI-Ansichten, anstatt den Textur-Atlas als Inventarsymbol zu zeigen.
 - Alle 32 enthaltenen Sounddateien einschließlich Lautstärke 0,5 sowie 73 private Unicode-Glyphen aus dem aktuellen Java-Pack.
-- Bestehende Pack-UUIDs bleiben erhalten; die Pack-Version steigt von `[1,21,11]` auf `[1,21,12]`, damit Clients den neuen Stand laden.
+- Bestehende Pack-UUIDs bleiben erhalten; die Pack-Version steigt von `[1,21,11]` über die geprüften Zwischenstände auf `[1,21,15]`, damit Clients den neuen Stand laden.
 - Einzige Java-Änderung: `assets/enderguns/models/ammo/rocket_launcher_ammo.json` verwies auf eine nicht vorhandene Vanilla-Textur. Die Referenz zeigt nun auf die vorhandene EnderGuns-Textur. Alle anderen Java-Dateien wurden gegen den gesicherten Ausgangsstand geprüft und bleiben unverändert.
 
 Die Referenz `docs/bedrock-source-lock.json` enthält den Java-Ausgangscommit und die ursprünglichen Datei-Prüfsummen. Der vollständige Erzeugungscode ist versioniert; zukünftige Java-Modelländerungen können erneut konvertiert werden. Nicht unterstützte UV-Rotationen oder Element-Rescale werden ausdrücklich abgewiesen statt stillschweigend falsch umgesetzt.
@@ -56,7 +56,7 @@ Nur der Proxy braucht das neue Pack. Im aktuellen Proxy und seiner CloudNet-Vorl
 
 Die vorhandene Geyser-Konfiguration für Custom Content und erzwungene Resourcepacks bleibt bestehen. Floodgate-Schlüssel und Firewall werden nicht verändert. Ein notwendiger Proxy-Neustart braucht ausdrücklich eine neue Freigabe; die vorherige Freigabe wurde für Vulcan/Floodgate verbraucht.
 
-Öffentlicher Bedrock-Zugang benötigt UDP 19132 zur Proxy-Adresse 10.0.1.205:19132; diese Weiterleitung war in der bisherigen Prüfung nicht nachgewiesen. Die Firewall-Verwaltung bleibt beim Nutzer/Developer. Über bereits vorhandenen internen Netzwerkzugang lässt sich die Proxy-Adresse direkt testen.
+Der öffentliche UDP-Port 19132 wurde auf ausdrücklichen Nutzerauftrag dem vorhandenen OPNsense-Alias `endernation_cloudnet` hinzugefügt. Öffentlicher Bedrock-Beitritt ist inzwischen im echten Client bestätigt.
 
 ## Verbindliche Client-Abnahme
 
@@ -72,3 +72,19 @@ Bedrocks private Font-Zellen können die sehr breiten Java-Schilder/Logos nicht 
 - https://github.com/AZPixel-Team/Java2Bedrock – Vergleich der getrennten Achsenhierarchie und Attachment-Rahmen
 
 Der neue Python-Builder ist eine eigenständige Implementierung für dieses Pack. Ursprüngliche Modell-Credits bleiben in den Java-Quelldateien erhalten.
+
+## Tatsächlicher Client-Test am 16.10.2026
+
+Der genehmigte Proxy-Neustart installierte zunächst Pack-Version 1.21.12 (SHA256 f79c253dd28510de8ccdb377e2cf47d6edb9ab9eef38e1eb4a4e885f25ae28fe). Backup: `/home/cloudnet/enbackup/bedrock-pack-20261016/backup-20261016-164422`. Lobby, EnderGuns und Bauserver wurden dafür nicht neu gestartet. Das Java-Download-Pack und der ProxySystem-JAR blieben unverändert.
+
+Im vorhandenen Windows-Bedrock-Client wurden echte Waffensymbole, texturierte 3D-NPC-Waffen, Munition und die M1014-Handansicht bestätigt. Der reale Test zeigte zugleich Fehler, die der native Ladetest nicht erkennen konnte: übergroße/verschobene Unicode-Bilder und eine unsichtbare M9-Handansicht. Diese Zwischenstände werden ausdrücklich nicht als fertige Modellparität gewertet.
+
+Die Schriftkonvertierung verwendet nun Java-`height`/`ascent` und Bedrocks mittige Unicode-Zellenausrichtung. Version 1.21.14 zeigt in der Lobby RANK, PLAYER, COINS, PLAYTIME und das Community-Logo korrekt. Echter Screenshot: `evidence-bedrock-20261016/client-v14-lobby-fonts.png`. Die rote native Bedrock-Zeilennummerierung ist eine separate Protokoll-/Scoreboard-Eigenschaft und wurde nicht als Resourcepack-Fehler behandelt.
+
+Das Content-Protokoll identifizierte zusätzlich ein übernommenes beschädigtes `textures/enderguns/bullet.png`: UTF-16-kodierte Binärdaten statt PNG. Die aktuelle Java-Sprite-Datei ersetzt diese Legacy-Referenz. Der Builder öffnet jetzt sämtliche PNGs zur Integritätsprüfung; ein Server-Regressionstest prüft zusätzlich Signatur und Chunk-CRCs.
+
+M9-Kalibrierungen stehen getrennt in `bedrock-view-adjustments.json`, damit Java-Quellen nicht durch Kamerakorrekturen verändert werden. Die allgemeine Konvertierung bewahrt sämtliche drei Drehachsen. Die rechte M9-Handansicht in 1.21.15 verwendet ausdrücklich Pauls ältere vollständige 3D-Pose und deren Drehpunkt als manuelle Referenz; dies ist eine dokumentierte Ausnahme von der allgemeinen Umrechnung. Eine bloß mathematische Achsenprüfung gilt hierfür nicht als visuelle Abnahme.
+
+20 Ressourcenprüfungen auf dem Server bestanden. Der Geyser-Reload wurde vorher mit der identischen Geyser-Version in einem isolierten Loopback-Prozess geprüft; anschließend wurden die produktiven Java-Prozess-IDs bei jeder reinen Pack-Korrektur unverändert nachgewiesen. Proxmox-SSH war vor dem letzten Lauf zeitweise nicht erreichbar, daher liefen die letzten reinen Dateiprüfungen isoliert unter `/home/cloudnet/enbackup/bedrock-asset-fixture-20261016` auf dem CloudNet-Host. Kein Minecraft-Testserver auf dem PC. Nachweise enthalten auch die anfänglich zu strengen Logger-/Ready-Muster und deren Korrektur; zusätzliche Proxy-Neustarts erfolgten deshalb nicht.
+
+Noch offen: endgültige M9-Sichtabnahme und vollständiger Vergleich aller 21 Waffen in sämtlichen Haupt-/Nebenhand-, Kamera-, Schuss-/Nachlade- und Zoom-Kontexten. Das Pack ist installiert; eine vollständige 1:1-Parität aller Ansichten wird nicht behauptet.

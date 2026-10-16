@@ -1,0 +1,15 @@
+{
+  "m9": {
+    "pivot": [-7.40625, 5.3687496, 0.25],
+    "firstperson_righthand": {
+      "pose": {
+        "position": [-6, 23.75, -14.75],
+        "rotation": [-13.5, -39, -27.5],
+        "scale": [0.78, 0.78, 0.69]
+      }
+    },
+    "firstperson_lefthand": {
+      "position_offset": [6, 5, -10]
+    }
+  }
+}

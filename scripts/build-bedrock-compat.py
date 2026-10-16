@@ -43,6 +43,7 @@ def transform(d,view):
  return {k:v.get(k,default) for k,default in [('rotation',[0,0,0]),('translation',[0,0,0]),('scale',[1,1,1])]}
 def animations(key,d):
  result={}
+ adjustments=read(ROOT/'bedrock-view-adjustments.json').get(key,{})
  for view in VIEWS:
   t=transform(d,view);rx,ry,rz=t['rotation'];x,y,z=t['translation'];scale=t['scale']
   first=view.startswith('first');left=view.endswith('lefthand');head=view=='head'
@@ -51,6 +52,13 @@ def animations(key,d):
   if head:
    frame={'rotation':[0,0,0],'position':[0,19.9,0],'scale':1}
    position=[-.625*x,.625*y,.625*z];scale=[n*.625 for n in scale]
+  # Attachment camera bases differ between engines. Keep calibration separate
+  # from the locked Java model and retain every source rotation axis.
+  adjustment=adjustments.get(view,{})
+  frame['position']=[v+o for v,o in zip(frame['position'],adjustment.get('position_offset',[0,0,0]))]
+  if 'pose' in adjustment:
+   result['animation.endernation.'+key+'.'+view]={'loop':True,'bones':{'anchor':adjustment['pose']}}
+   continue
   result['animation.endernation.'+key+'.'+view]={'loop':True,'bones':{
    'anchor':frame,'display_x':{'rotation':[-rx,0,0],'position':position,'scale':scale},
    'display_y':{'rotation':[0,-ry,0]},'display_z':{'rotation':[0,0,rz]}}}
@@ -91,6 +99,9 @@ def geometry(key,d,items,output):
   {'name':'display_x','parent':'anchor','pivot':[0,8,0]},
   {'name':'display_y','parent':'display_x','pivot':[0,8,0]},
   {'name':'display_z','parent':'display_y','pivot':[0,8,0],'cubes':[]}]
+ calibration=read(ROOT/'bedrock-view-adjustments.json').get(key,{})
+ if 'pivot' in calibration:
+  for bone in bones:bone['pivot']=calibration['pivot']
  for i,e in enumerate(items):
   a,b=e['from'],e['to'];lo=[min(a[j],b[j]) for j in range(3)];hi=[max(a[j],b[j]) for j in range(3)]
   cube={'origin':[8-hi[0],lo[1],lo[2]-8],'size':[hi[j]-lo[j] for j in range(3)],'uv':{}}
@@ -178,7 +189,7 @@ def sounds(output):
  return count
 
 def glyphs(output):
- pages={};count=0;cell=128
+ pages={};count=0;cell=128;metrics=[]
  for provider in read(ROOT/'assets/minecraft/font/default.json')['providers']:
   if provider.get('type')!='bitmap':continue
   ref=provider['file'];source=asset(ref,'textures') if ':' in ref else ROOT/'assets/minecraft/textures'/(ref if ref.endswith('.png') else ref+'.png')
@@ -193,13 +204,22 @@ def glyphs(output):
     sprite=image.crop((round(col*cw),round(row*ch),round((col+1)*cw),round((row+1)*ch)))
     bounds=sprite.getbbox()
     if not bounds:continue
-    sprite=sprite.crop(bounds);factor=min(cell/sprite.width,cell/sprite.height)
+    # Java height is a logical font size, not an instruction to fill a Bedrock
+    # atlas cell. Filling every cell made small scoreboard labels enormous.
+    sprite=sprite.crop(bounds);factor=provider.get('height',8)/ch
+    factor=min(factor,cell/sprite.width,cell/sprite.height)
     sprite=sprite.resize((max(1,round(sprite.width*factor)),max(1,round(sprite.height*factor))),Image.Resampling.NEAREST)
     page=pages.setdefault(cp>>8,Image.new('RGBA',(cell*16,cell*16)));x=(cp&15)*cell;y=((cp&255)>>4)*cell
-    page.paste(sprite,(x,y+cell-sprite.height));count+=1
+    # Bedrock vertically centers a Unicode cell on its text baseline. Keep
+    # short labels near that center instead of at the top of a 128px cell.
+    top=max(0,cell//2-4+8-provider['ascent']+round(bounds[1]*factor))
+    top=min(top,cell-sprite.height)
+    page.paste(sprite,(x,y+top));count+=1
+    metrics.append({'codepoint':format(cp,'04X'),'source':ref,'java_height':provider.get('height',8),
+     'ascent':provider['ascent'],'size':list(sprite.size),'top':top})
  for number,page in pages.items():
   p=output/'font'/('glyph_'+format(number,'02X')+'.png');p.parent.mkdir(exist_ok=True);page.save(p)
- return count
+ return count,metrics
 
 def pack_zip(source,target,files=None):
  with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
@@ -227,6 +247,10 @@ def main():
   icon='eg_'+key;iconpath=output/'textures/endernation/icons'/(key+'.png');iconpath.parent.mkdir(parents=True,exist_ok=True)
   if d.get('generated'):Image.open(asset(texture_ref(d,'#layer0'),'textures')).save(iconpath)
   else:render_icon(d,items).save(iconpath)
+  if key=='bullet':
+   # The inherited compatibility texture was UTF-16 encoded binary data, not
+   # a valid PNG. Retain its legacy path using the real current Java sprite.
+   Image.open(asset(texture_ref(d,'#layer0'),'textures')).save(output/'textures/enderguns/bullet.png')
   icons['texture_data'][icon]={'textures':'textures/endernation/icons/'+key}
   options={'icon':icon,'allow_offhand':True,'display_handheld':False}
   ids=[]
@@ -243,11 +267,14 @@ def main():
    'java_elements':len(d.get('elements',[])),'bedrock_cubes':len(items),'generated_sprite':bool(d.get('generated')),
    'views':{v:transform(d,v) for v in VIEWS},'identifiers':ids})
  write(output/'textures/item_texture.json',icons);write(ROOT/'geysermc/geyser_mappings.json',{'format_version':2,'items':mapping})
- manifest=read(output/'manifest.json');manifest['header']['version']=[1,21,12]
- for module in manifest['modules']:module['version']=[1,21,12]
+ manifest=read(output/'manifest.json');manifest['header']['version']=[1,21,15]
+ for module in manifest['modules']:module['version']=[1,21,15]
  write(output/'manifest.json',manifest)
- report['sounds']=sounds(output);report['glyphs']=glyphs(output)
+ report['sounds']=sounds(output);report['glyphs'],report['glyph_metrics']=glyphs(output)
+ report['view_adjustments']=read(ROOT/'bedrock-view-adjustments.json')
  report['geometry_count']=len(entries);report['mapping_definitions']=sum(len(v) for v in mapping.values())
+ for image_path in output.rglob('*.png'):
+  with Image.open(image_path) as png:png.verify()
  # Old flat geometry and textures remain as a reversible reference, but no active attachable uses them.
  pack_zip(output,args.output/'EnderNation-Bedrock-26.3.mcpack')
  pack_zip(ROOT/'geysermc',args.output/'EnderNation-Geyser-Mappings-26.3.zip',[ROOT/'geysermc/geyser_mappings.json'])
