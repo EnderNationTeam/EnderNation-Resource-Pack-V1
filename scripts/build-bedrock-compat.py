@@ -56,9 +56,6 @@ def animations(key,d):
   # from the locked Java model and retain every source rotation axis.
   adjustment=adjustments.get(view,{})
   frame['position']=[v+o for v,o in zip(frame['position'],adjustment.get('position_offset',[0,0,0]))]
-  if 'pose' in adjustment:
-   result['animation.endernation.'+key+'.'+view]={'loop':True,'bones':{'anchor':adjustment['pose']}}
-   continue
   result['animation.endernation.'+key+'.'+view]={'loop':True,'bones':{
    'anchor':frame,'display_x':{'rotation':[-rx,0,0],'position':position,'scale':scale},
    'display_y':{'rotation':[0,-ry,0]},'display_z':{'rotation':[0,0,rz]}}}
@@ -99,9 +96,6 @@ def geometry(key,d,items,output):
   {'name':'display_x','parent':'anchor','pivot':[0,8,0]},
   {'name':'display_y','parent':'display_x','pivot':[0,8,0]},
   {'name':'display_z','parent':'display_y','pivot':[0,8,0],'cubes':[]}]
- calibration=read(ROOT/'bedrock-view-adjustments.json').get(key,{})
- if 'pivot' in calibration:
-  for bone in bones:bone['pivot']=calibration['pivot']
  for i,e in enumerate(items):
   a,b=e['from'],e['to'];lo=[min(a[j],b[j]) for j in range(3)];hi=[max(a[j],b[j]) for j in range(3)]
   cube={'origin':[8-hi[0],lo[1],lo[2]-8],'size':[hi[j]-lo[j] for j in range(3)],'uv':{}}
@@ -267,8 +261,8 @@ def main():
    'java_elements':len(d.get('elements',[])),'bedrock_cubes':len(items),'generated_sprite':bool(d.get('generated')),
    'views':{v:transform(d,v) for v in VIEWS},'identifiers':ids})
  write(output/'textures/item_texture.json',icons);write(ROOT/'geysermc/geyser_mappings.json',{'format_version':2,'items':mapping})
- manifest=read(output/'manifest.json');manifest['header']['version']=[1,21,15]
- for module in manifest['modules']:module['version']=[1,21,15]
+ manifest=read(output/'manifest.json');manifest['header']['version']=[1,21,16]
+ for module in manifest['modules']:module['version']=[1,21,16]
  write(output/'manifest.json',manifest)
  report['sounds']=sounds(output);report['glyphs'],report['glyph_metrics']=glyphs(output)
  report['view_adjustments']=read(ROOT/'bedrock-view-adjustments.json')

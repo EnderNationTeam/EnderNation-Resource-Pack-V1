@@ -19,36 +19,36 @@
           "name": "anchor",
           "binding": "c.item_slot == 'head' ? 'head' : q.item_slot_to_bone_name(c.item_slot)",
           "pivot": [
-            -7.40625,
-            5.3687496,
-            0.25
+            0,
+            8,
+            0
           ]
         },
         {
           "name": "display_x",
           "parent": "anchor",
           "pivot": [
-            -7.40625,
-            5.3687496,
-            0.25
+            0,
+            8,
+            0
           ]
         },
         {
           "name": "display_y",
           "parent": "display_x",
           "pivot": [
-            -7.40625,
-            5.3687496,
-            0.25
+            0,
+            8,
+            0
           ]
         },
         {
           "name": "display_z",
           "parent": "display_y",
           "pivot": [
-            -7.40625,
-            5.3687496,
-            0.25
+            0,
+            8,
+            0
           ],
           "cubes": [
             {

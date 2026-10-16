@@ -1,0 +1,37 @@
+{
+  "status": "installed_partial_visual_acceptance",
+  "pack_version": [
+    1,
+    21,
+    16
+  ],
+  "pack_sha256": "a02c2cafff1c62643ca5b87dbb88ca45698a0f346f18c16008ef14e8b2a72038",
+  "resource_tests_on_server": 20,
+  "verified_in_actual_clients": [
+    "public Bedrock join",
+    "Java remains connected during Geyser asset reload",
+    "Bedrock Lobby rank/coins/playtime glyph size and baseline (v14)",
+    "Bedrock community logo (v14)",
+    "textured weapon inventory icons",
+    "textured 3D NPC gun",
+    "M1014 first-person model"
+  ],
+  "rejected_client_candidates": [
+    "v12 glyphs oversized and M9 not visible",
+    "v13 glyph baseline incorrect and M9 not visible",
+    "v14 M9 still not visible",
+    "v15 old M9 reference pose oversized and rotated"
+  ],
+  "pending": [
+    "v16 M9 first-person position",
+    "all 21 weapons in every camera and hand context",
+    "shoot/reload/zoom/audio comparison"
+  ],
+  "computer_use": "Stopped by user physical Escape; no further app input issued",
+  "client_setting_left_enabled": "Creator > Content Log file was temporarily enabled; cannot restore through UI after user stopped Computer Use",
+  "other_client_settings_changed": false,
+  "source_models_changed_for_calibration": false,
+  "proxy_restarts": 1,
+  "subsequent_geyser_asset_reloads": 4,
+  "last_generated_changelog_checkpoint_changed": false
+}

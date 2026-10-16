@@ -1,0 +1,48 @@
+{
+  "status": "reloaded_client_acceptance_pending",
+  "manifest": {
+    "version": [
+      1,
+      21,
+      16
+    ],
+    "resource_tests": 20,
+    "native_geyser_reload_verified": true,
+    "native_reload_reference": "bedrock-native-results-v13.json",
+    "pack_sha256": "a02c2cafff1c62643ca5b87dbb88ca45698a0f346f18c16008ef14e8b2a72038",
+    "previous_pack_sha256": "8c446030d72763e178e40ed12cd61cb86ebf4fcf677f17a47fc0d70e807bb000",
+    "client_acceptance": "pending"
+  },
+  "before": {
+    "Bauserver-1": {
+      "pid": 2342227,
+      "directory": "/home/cloudnet/local/services/Bauserver-1"
+    },
+    "Lobby-1_2960d5af-5e54-4311-8b07-57919bfe57b2": {
+      "pid": 2397399,
+      "directory": "/home/cloudnet/temp/services/Lobby-1_2960d5af-5e54-4311-8b07-57919bfe57b2"
+    },
+    "EnderGuns-1": {
+      "pid": 2397413,
+      "directory": "/home/cloudnet/local/services/EnderGuns-1"
+    },
+    "Proxy-1_77da8985-520d-40b5-89d5-9b94a205c42f": {
+      "pid": 2403985,
+      "directory": "/home/cloudnet/temp/services/Proxy-1_77da8985-520d-40b5-89d5-9b94a205c42f"
+    }
+  },
+  "server_restart": false,
+  "mapping_changed": false,
+  "backup": "/home/cloudnet/enbackup/bedrock-visual-20261016/v16/backup-20261016-172145",
+  "log_offset": 58714,
+  "same_processes": true,
+  "geyser_reloaded": true,
+  "geyser_log": [
+    "[19:21:45] [Velocity - Task Executor #8/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: [16.10 19:21:45.687] INFO : Reloading Geyser configurations... all connected bedrock clients will be kicked.",
+    "[19:21:45] [Geyser Scheduled Thread-17-1/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: [16.10 19:21:45.698] INFO : Shutting down Geyser.",
+    "[19:21:45] [GeyserServer-22-1/INFO] [com.velocitypowered.proxy.console.VelocityConsole]: [16.10 19:21:45.812] INFO : Started Geyser on UDP port 19132"
+  ],
+  "hashes_match": true,
+  "udp_socket_confirmed": true,
+  "errors": []
+}

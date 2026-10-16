@@ -114,10 +114,6 @@ class BedrockCompatibility(unittest.TestCase):
    animations=read(BED/'animations/endernation'/(i['name']+'.animation.json'))['animations']
    for view,t in i['views'].items():
     b=animations['animation.endernation.'+i['name']+'.'+view]['bones'];x,y,z=t['rotation']
-    manual=read(ROOT/'bedrock-view-adjustments.json').get(i['name'],{}).get(view,{}).get('pose')
-    if manual:
-     self.assertEqual(manual,b['anchor']);self.assertEqual(3,len(manual['rotation']))
-     self.assertTrue(all(math.isfinite(v) for v in manual['rotation']));continue
     self.assertEqual([-x,0,0],b['display_x']['rotation']);self.assertEqual([0,-y,0],b['display_y']['rotation']);self.assertEqual([0,0,z],b['display_z']['rotation'])
  def test_ak_third_person_x_rotation_is_not_silently_dropped(self):
   animations=read(BED/'animations/endernation/ak_47.animation.json')['animations']
@@ -129,7 +125,7 @@ class BedrockCompatibility(unittest.TestCase):
    self.assertIn("off_hand",conditions['firstperson_lefthand']);self.assertIn("main_hand",conditions['firstperson_righthand'])
    self.assertIn('head',conditions['hide_head']);self.assertEqual(6,len(d['animations']))
  def test_existing_manifest_ids_are_kept_and_version_is_incremented(self):
-  m=read(BED/'manifest.json');self.assertEqual([1,21,15],m['header']['version'])
+  m=read(BED/'manifest.json');self.assertEqual([1,21,16],m['header']['version'])
   self.assertEqual('5d41b684-e430-4efc-9043-7639f0047c33',m['header']['uuid'])
   self.assertNotEqual(m['header']['uuid'],m['modules'][0]['uuid']);self.assertEqual(m['header']['version'],m['modules'][0]['version'])
  def test_sound_assets_preserve_the_current_half_volume(self):
