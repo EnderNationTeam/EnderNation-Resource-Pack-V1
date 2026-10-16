@@ -1,0 +1,13 @@
+{
+  "version": [
+    1,
+    21,
+    17
+  ],
+  "resource_tests": 21,
+  "native_geyser_reload_verified": true,
+  "native_reload_reference": "bedrock-native-results-v13.json",
+  "pack_sha256": "4f2b73dee9462af1a8dd9bd5fe1818e0f2d141b781d7cc9975891500e296d2d1",
+  "previous_pack_sha256": "a02c2cafff1c62643ca5b87dbb88ca45698a0f346f18c16008ef14e8b2a72038",
+  "client_acceptance": "pending"
+}

@@ -1,12 +1,12 @@
 {
-  "status": "installed_partial_visual_acceptance",
+  "status": "installed_targeted_m9_firstperson_verified_full_matrix_pending",
   "pack_version": [
     1,
     21,
-    16
+    18
   ],
-  "pack_sha256": "a02c2cafff1c62643ca5b87dbb88ca45698a0f346f18c16008ef14e8b2a72038",
-  "resource_tests_on_server": 20,
+  "pack_sha256": "5624645682cdf93fd21b86e025a2c14c55a853d6815e4b06aa0727a3997098f8",
+  "resource_tests_on_server": 21,
   "verified_in_actual_clients": [
     "public Bedrock join",
     "Java remains connected during Geyser asset reload",
@@ -14,24 +14,30 @@
     "Bedrock community logo (v14)",
     "textured weapon inventory icons",
     "textured 3D NPC gun",
-    "M1014 first-person model"
+    "M1014 first-person model",
+    "v16 M9 first-person still invisible (rejected)",
+    "Java M9 reference captured",
+    "v18 M9 rendered in lower-right instead of thin diagonal strip entering from upper-right",
+    "v18 M1014 first-person regression check"
   ],
   "rejected_client_candidates": [
     "v12 glyphs oversized and M9 not visible",
     "v13 glyph baseline incorrect and M9 not visible",
     "v14 M9 still not visible",
-    "v15 old M9 reference pose oversized and rotated"
+    "v15 old M9 reference pose oversized and rotated",
+    "v16 M9 camera position still invisible",
+    "v17 alternate first-person basis: thin diagonal strip from upper-right"
   ],
   "pending": [
-    "v16 M9 first-person position",
     "all 21 weapons in every camera and hand context",
+    "exact Java/Bedrock pose parity",
     "shoot/reload/zoom/audio comparison"
   ],
-  "computer_use": "Stopped by user physical Escape; no further app input issued",
-  "client_setting_left_enabled": "Creator > Content Log file was temporarily enabled; cannot restore through UI after user stopped Computer Use",
+  "computer_use": "Resumed on new user request; M9 and M1014 first-person inspected. Later physical user input detected, so further view/settings manipulation deferred.",
+  "client_setting_left_enabled": "Creator Content Log file remains temporarily enabled; no further settings input while user is actively controlling the game.",
   "other_client_settings_changed": false,
   "source_models_changed_for_calibration": false,
   "proxy_restarts": 1,
-  "subsequent_geyser_asset_reloads": 4,
+  "subsequent_geyser_asset_reloads": 6,
   "last_generated_changelog_checkpoint_changed": false
 }

@@ -124,8 +124,23 @@ class BedrockCompatibility(unittest.TestCase):
    d=read(p)['minecraft:attachable']['description'];conditions={k:v for o in d['scripts']['animate'] for k,v in o.items()}
    self.assertIn("off_hand",conditions['firstperson_lefthand']);self.assertIn("main_hand",conditions['firstperson_righthand'])
    self.assertIn('head',conditions['hide_head']);self.assertEqual(6,len(d['animations']))
+ def test_m9_first_person_mesh_and_controller_preserve_the_third_person_model(self):
+  geometries=read(BED/'models/entity/endernation/generated/m9.geo.json')['minecraft:geometry']
+  self.assertEqual(2,len(geometries))
+  def cubes(g):return [c for b in g['bones'] for c in b.get('cubes',[])]
+  before,after=cubes(geometries[0]),cubes(geometries[1]);self.assertEqual(len(before),len(after))
+  offset=[after[0]['origin'][a]-before[0]['origin'][a] for a in range(3)]
+  for original,moved in zip(before,after):
+   self.assertEqual(original['size'],moved['size']);self.assertEqual(original['uv'],moved['uv'])
+   for a in range(3):self.assertAlmostEqual(offset[a],moved['origin'][a]-original['origin'][a])
+  controller=read(BED/'render_controllers/m9.render_controllers.json')['render_controllers']['controller.render.endernation.m9']
+  self.assertIn('Geometry.firstperson',controller['geometry']);self.assertIn('Geometry.default',controller['geometry'])
+  for name in ['eg_m9','m9_model']:
+   desc=read(BED/'attachables/endernation/items'/(name+'.attachable.json'))['minecraft:attachable']['description']
+   self.assertEqual(geometries[1]['description']['identifier'],desc['geometry']['firstperson'])
+   self.assertEqual(['controller.render.endernation.m9'],desc['render_controllers'])
  def test_existing_manifest_ids_are_kept_and_version_is_incremented(self):
-  m=read(BED/'manifest.json');self.assertEqual([1,21,16],m['header']['version'])
+  m=read(BED/'manifest.json');self.assertEqual([1,21,18],m['header']['version'])
   self.assertEqual('5d41b684-e430-4efc-9043-7639f0047c33',m['header']['uuid'])
   self.assertNotEqual(m['header']['uuid'],m['modules'][0]['uuid']);self.assertEqual(m['header']['version'],m['modules'][0]['version'])
  def test_sound_assets_preserve_the_current_half_volume(self):

@@ -12,7 +12,8 @@
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {
-        "default": "geometry.endernation.m9"
+        "default": "geometry.endernation.m9",
+        "firstperson": "geometry.endernation.m9_firstperson"
       },
       "animations": {
         "firstperson_righthand": "animation.endernation.m9.firstperson_righthand",
@@ -45,7 +46,7 @@
         ]
       },
       "render_controllers": [
-        "controller.render.item_default"
+        "controller.render.endernation.m9"
       ]
     }
   }

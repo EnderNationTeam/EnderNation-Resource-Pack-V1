@@ -49,6 +49,9 @@ def animations(key,d):
   first=view.startswith('first');left=view.endswith('lefthand');head=view=='head'
   frame={'rotation':[90,60,-40],'position':[4,10,4],'scale':1.5} if first else {'rotation':[90,0,0],'position':[0,13,-3],'scale':1}
   position=[x if left else -x,y,-z if first else z]
+  if first and 'firstperson_alignment' in adjustments:
+   position=adjustments['firstperson_alignment']['display_position'].copy()
+   if left:position[0]=-position[0]
   if head:
    frame={'rotation':[0,0,0],'position':[0,19.9,0],'scale':1}
    position=[-.625*x,.625*y,.625*z];scale=[n*.625 for n in scale]
@@ -114,6 +117,20 @@ def geometry(key,d,items,output):
   else:bones[3]['cubes'].append(cube)
  doc={'format_version':'1.16.0','minecraft:geometry':[{'description':{'identifier':'geometry.endernation.'+key,
   'texture_width':width,'texture_height':height,'visible_bounds_width':8,'visible_bounds_height':8,'visible_bounds_offset':[0,1,0]},'bones':bones}]}
+ calibration=read(ROOT/'bedrock-view-adjustments.json').get(key,{})
+ if 'firstperson_alignment' in calibration:
+  # Calibrate an offset Java mesh in the established camera frame without
+  # moving its third-person geometry. Keep rotated element pivots in step
+  # with their cubes; changing the attachment pivot alone clips the M9.
+  first_geometry=copy.deepcopy(doc['minecraft:geometry'][0])
+  first_geometry['description']['identifier']+='_firstperson'
+  cubes=[c for b in bones for c in b.get('cubes',[])]
+  center=[(min(c['origin'][a] for c in cubes)+max(c['origin'][a]+c['size'][a] for c in cubes))/2 for a in range(3)]
+  target=calibration['firstperson_alignment']['model_center'];offset=[target[a]-center[a] for a in range(3)]
+  for bone in first_geometry['bones']:
+   if bone['name'].startswith('element_'):bone['pivot']=[v+o for v,o in zip(bone['pivot'],offset)]
+   for cube in bone.get('cubes',[]):cube['origin']=[v+o for v,o in zip(cube['origin'],offset)]
+  doc['minecraft:geometry'].append(first_geometry)
  return doc,tex
 
 def rotation_matrix(degrees):
@@ -157,11 +174,15 @@ def attachable(identifier,key,tex):
  names={v:'animation.endernation.'+key+'.'+v for v in VIEWS};names['hide_head']='animation.endernation.'+key+'.hide_head'
  conditions={v:("c.is_first_person" if v.startswith('first') else "!c.is_first_person")+" && c.item_slot == '"+('off_hand' if v.endswith('lefthand') else 'main_hand')+"'" for v in VIEWS if v!='head'}
  conditions['head']="!c.is_first_person && c.item_slot == 'head'";conditions['hide_head']="c.is_first_person && c.item_slot == 'head'"
- return {'format_version':'1.10.0','minecraft:attachable':{'description':{'identifier':identifier,
+ result={'format_version':'1.10.0','minecraft:attachable':{'description':{'identifier':identifier,
   'materials':{'default':'entity_alphatest_one_sided','enchanted':'entity_alphatest_glint'},
   'textures':{'default':tex,'enchanted':'textures/misc/enchanted_item_glint'},
   'geometry':{'default':'geometry.endernation.'+key},'animations':names,
   'scripts':{'animate':[{v:condition} for v,condition in conditions.items()]},'render_controllers':['controller.render.item_default']}}}
+ if 'firstperson_alignment' in read(ROOT/'bedrock-view-adjustments.json').get(key,{}):
+  desc=result['minecraft:attachable']['description'];desc['geometry']['firstperson']='geometry.endernation.'+key+'_firstperson'
+  desc['render_controllers']=['controller.render.endernation.'+key]
+ return result
 
 def sounds(output):
  definitions={};count=0
@@ -257,12 +278,16 @@ def main():
   for identifier in ids:
    path=output/'attachables/endernation/items'/((('eg_'+key) if identifier.startswith('geyser_custom:') else key+'_model')+'.attachable.json')
    write(path,attachable(identifier,key,tex))
+  if 'firstperson_alignment' in read(ROOT/'bedrock-view-adjustments.json').get(key,{}):
+   write(output/'render_controllers'/(key+'.render_controllers.json'),{'format_version':'1.8.0','render_controllers':{
+    'controller.render.endernation.'+key:{'geometry':'c.is_first_person ? Geometry.firstperson : Geometry.default',
+    'materials':[{'*':'v.is_enchanted ? Material.enchanted : Material.default'}],'textures':['Texture.default','Texture.enchanted']}}})
   report['items'].append({'name':key,'base':base,'cmd':cmd,'item_model':item_model if has_model else None,'source_model':ref,'source_sha256':digest(asset(ref,'models')),
    'java_elements':len(d.get('elements',[])),'bedrock_cubes':len(items),'generated_sprite':bool(d.get('generated')),
    'views':{v:transform(d,v) for v in VIEWS},'identifiers':ids})
  write(output/'textures/item_texture.json',icons);write(ROOT/'geysermc/geyser_mappings.json',{'format_version':2,'items':mapping})
- manifest=read(output/'manifest.json');manifest['header']['version']=[1,21,16]
- for module in manifest['modules']:module['version']=[1,21,16]
+ manifest=read(output/'manifest.json');manifest['header']['version']=[1,21,18]
+ for module in manifest['modules']:module['version']=[1,21,18]
  write(output/'manifest.json',manifest)
  report['sounds']=sounds(output);report['glyphs'],report['glyph_metrics']=glyphs(output)
  report['view_adjustments']=read(ROOT/'bedrock-view-adjustments.json')

@@ -1,17 +1,15 @@
 {
   "m9": {
-    "firstperson_righthand": {
-      "position_offset": [
-        -6,
-        -10,
-        0
-      ]
-    },
-    "firstperson_lefthand": {
-      "position_offset": [
+    "firstperson_alignment": {
+      "model_center": [
+        2,
         6,
-        -10,
         0
+      ],
+      "display_position": [
+        0,
+        3,
+        5.75
       ]
     }
   }
